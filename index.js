@@ -37,7 +37,7 @@ app.get('/', function(req, res){
 })
 
 app.get('/user', function(req, res){
-    res.send(__dirname + '/seoul_kangnam_gu.json')
+    res.send(__dirname + '/image.jpg')
 })
 
 app.post('/user', function(req, res){
