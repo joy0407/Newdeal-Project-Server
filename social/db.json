@@ -1,0 +1,21 @@
+{
+  "users": [
+    {
+      "id": "CkkMZbCRQ",
+      "displayName": "정윤",
+      "kakaoId": 2407196047
+    },
+    {
+      "id": "jGJ_6I_cp",
+      "email": "hjy072911@naver.com",
+      "displayName": "니냐뇨",
+      "naverId": "H4WZ2VHuZeAbKeY7EsL0LrFjE5KyAHp4vN8ckszoz7s"
+    },
+    {
+      "id": "yP2CibaZs",
+      "email": "hjy072911@gmail.com",
+      "displayName": "jyoon :-/",
+      "googleId": "117777023048596750477"
+    }
+  ]
+}

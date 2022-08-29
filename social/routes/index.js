@@ -1,12 +1,14 @@
-const router = require("./auth");
+let express = require('express');
+let router = express.Router();
+let template = require('../lib/template.js');
+let auth = require('../lib/auth')
 
-router.get('/',(req,res)=>{
-  let html = ''
-  if(req.user){
-    html = `<a href="/auth/kakao">kakao</a>`
-  } else {
-    html = `<a href="/auth/kakao_logout">logout</a>`
-  }
-  res.send(html)
-})
-module.exports = router;
+router.get('/', (req, res) => {
+  let html = template.HTML(
+    '',
+    '',
+    auth.statusUI(req,res)
+  );
+res.send(html)
+});
+module.exports=router;
