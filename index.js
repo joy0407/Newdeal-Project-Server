@@ -4,6 +4,7 @@ import path from "path"
 import multer from "multer"
 import fs from "fs"
 import JSZip from "jszip"
+import cors from  "cors"
 
 //module타입 코딩에서는 __dirname이 정의되어있지않음, 수동으로 직접 정의
 const __dirname = path.resolve()
@@ -11,6 +12,10 @@ const __dirname = path.resolve()
 //express 초기화
 const app = express()
 const port = 3000
+
+app.use(cors({
+    Origin : 'http://localhost:3000'
+}))
 
 
 //Mysql 연결설정
@@ -29,7 +34,6 @@ connetion.connect()
 
 app.post('/',function(req, res) {
     //res.send('Hello World!')
-
     connetion.query('select * from userinfo', function(error, row){
         if(error) throw error
         console.log('user info is:', row)
@@ -121,8 +125,19 @@ app.post('/matchFish/caculateData', cpUpload,  function(req, res){
         if(error) throw error
     })
 
+    let data = fs.readFileSync(newPath, "base64")
+
     //물고기사진 전송
-    res.sendFile(newPath)
+    res.send(data)
+
+    //res.sendFile(newPath)
+})
+
+app.get('/matchFish/caculateData', function(req, res){
+    let image = __dirname + '/image.jpg'
+    res.sendFile(image)
+
+    console.log('send image')
 })
 
 //text filed 테스트, x-www-form-urlencoded형태의 데이터를 인식
@@ -134,4 +149,19 @@ app.post('/matchFish/receiveData', function(req, res){
     console.log(req.body)
 
     res.send(req.body)
+})
+
+
+// rank전송용
+app.post('/rank/fish', function(req, res){
+    console.log('rankFish')
+
+    let data = []
+
+    data.push({'rank' : 1, 'length' : 15})
+    data.push({'rank' : 2, 'length' : 14})
+    data.push({'rank' : 3, 'length' : 13})
+    data.push({'rank' : 4, 'length' : 12})
+
+    res.send(data)
 })
