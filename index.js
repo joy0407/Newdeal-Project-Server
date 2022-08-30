@@ -5,6 +5,7 @@ import multer from "multer"
 import fs from "fs"
 import JSZip from "jszip"
 import cors from  "cors"
+import { Blob } from "buffer"
 
 //module타입 코딩에서는 __dirname이 정의되어있지않음, 수동으로 직접 정의
 const __dirname = path.resolve()
@@ -121,15 +122,28 @@ app.post('/matchFish/caculateData', cpUpload,  function(req, res){
     let oldPath = __dirname + '/' + req.files['fish'][0].path
     let newPath = __dirname + '/' + req.files['fish'][0].path + '.jpg'
 
-    fs.rename(oldPath, newPath, function(error){
+    fs.renameSync(oldPath, newPath, function(error){
         if(error) throw error
     })
 
-    let data = fs.readFileSync(newPath, "base64")
+    //let data = fs.readFileSync(newPath, "base64")
+
+   
+    let data = fs.readFileSync(newPath, function(err) {
+        if(err) throw err
+    })
+
+    console.log(data)
+    let blob = new Blob([data], {type:'image/jpeg'})
+    console.log(blob)
 
     //물고기사진 전송
-    res.send(data)
+    //res.send(blob)
 
+    res.type(blob.type)
+    blob.arrayBuffer().then((buf) =>{
+        res.send(Buffer.from(buf))
+    })
     //res.sendFile(newPath)
 })
 
