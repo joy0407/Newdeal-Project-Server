@@ -20,14 +20,14 @@ app.use(cors({
 
 
 //Mysql 연결설정
-const connetion = mysql.createConnection({
-    host : 'localhost',
-    user : 'root',
-    password : '0000',
-    database : 'test'
-})
+// const connetion = mysql.createConnection({
+//     host : 'localhost',
+//     user : 'root',
+//     password : '0000',
+//     database : 'test'
+// })
 
-connetion.connect()
+// connetion.connect()
 
 
 //-------------------------------------------------
@@ -133,17 +133,23 @@ app.post('/matchFish/caculateData', cpUpload,  function(req, res){
         if(err) throw err
     })
 
-    console.log(data)
-    let blob = new Blob([data], {type:'image/jpeg'})
-    console.log(blob)
+    //send base64
+    let sendData = new Buffer.from(data).toString("base64")
+    res.send(sendData)
 
-    //물고기사진 전송
-    //res.send(blob)
+    //send pack blob
+    // console.log(data)
+    // let blob = new Blob([data], {type:'image/jpeg'})
+    // console.log(blob)
 
-    res.type(blob.type)
-    blob.arrayBuffer().then((buf) =>{
-        res.send(Buffer.from(buf))
-    })
+    // //물고기사진 전송
+
+    // res.type(blob.type)
+    // blob.arrayBuffer().then((buf) =>{
+    //     res.send(Buffer.from(buf))
+    // })
+
+    //send raw binaly
     //res.sendFile(newPath)
 })
 
