@@ -133,8 +133,11 @@ app.post('/matchFish/caculateData', cpUpload,  function(req, res){
         if(err) throw err
     })
 
+    //res.send(data)
+
     //send base64
     let sendData = new Buffer.from(data).toString("base64")
+    console.log(sendData)
     res.send(sendData)
 
     //send pack blob
@@ -184,4 +187,40 @@ app.post('/rank/fish', function(req, res){
     data.push({'rank' : 4, 'length' : 12})
 
     res.send(data)
+})
+
+// map전송 테스트
+app.get('/map/fish', function(req, res){
+    console.log('mapFish')
+
+    //use image Path list
+
+    let filePath = __dirname + '/image.jpg'
+    let data = fs.readFileSync(filePath, function(err) {
+        if(err) throw err
+    })
+
+    let sendData = new Buffer.from(data).toString("base64")
+    //console.log(sendData)
+    res.send(sendData)
+})
+
+app.use('/map/center', express.json())
+app.use('/map/center', express.urlencoded({extended:true}))
+app.post('/map/center', function(req, res){
+    console.log('mapCenter')
+
+    let data = req.body
+
+    console.log(data.La + ' ' + data.Ma) 
+
+    //get position data for database with data, get image Path list
+
+    //insert select data to sendData
+
+    let sendData= []
+
+    sendData.push(data)
+
+    res.send(sendData)
 })
