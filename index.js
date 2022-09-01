@@ -15,7 +15,7 @@ const app = express()
 const port = 3000
 
 app.use(cors({
-    Origin : 'http://localhost:3000'
+    Origin : 'https://nunukang.shop:3000'
 }))
 
 
