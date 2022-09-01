@@ -5,7 +5,6 @@ import multer from "multer"
 import fs from "fs"
 import JSZip from "jszip"
 import cors from  "cors"
-import { Blob } from "buffer"
 
 //module타입 코딩에서는 __dirname이 정의되어있지않음, 수동으로 직접 정의
 const __dirname = path.resolve()
@@ -14,7 +13,8 @@ const __dirname = path.resolve()
 const app = express()
 const port = 3000
 
-app.use(cors({
+//http 통신프로토콜을 위한 코드
+app.use(    ({
     Origin : 'http://localhost:3000'
 }))
 
@@ -122,6 +122,16 @@ app.post('/matchFish/caculateData', cpUpload,  function(req, res){
     let oldPath = __dirname + '/' + req.files['fish'][0].path
     let newPath = __dirname + '/' + req.files['fish'][0].path + '.jpg'
 
+    let location = {
+        latitude : 0,
+        longitude : 0
+    }
+
+    location.latitude = req.body.latitude
+    location.longitude = req.body.longitude
+
+    console.log(location)
+
     fs.renameSync(oldPath, newPath, function(error){
         if(error) throw error
     })
@@ -136,10 +146,19 @@ app.post('/matchFish/caculateData', cpUpload,  function(req, res){
     //res.send(data)
 
     //send base64
-    let sendData = new Buffer.from(data).toString("base64")
-    console.log(sendData)
-    res.send(sendData)
+    //let sendData = new Buffer.from(data).toString("base64")
+    //console.log(sendData)
+    //res.send(sendData)
 
+    let length = Math.random() * 100
+
+    let sendData = {}
+
+    sendData.fishType = '열대어'
+    sendData.fishLength = length.toFixed(2).toString() + 'cm'
+    sendData.imageData = new Buffer.from(data).toString("base64")
+
+    res.send(sendData)
     //send pack blob
     // console.log(data)
     // let blob = new Blob([data], {type:'image/jpeg'})
@@ -212,15 +231,34 @@ app.post('/map/center', function(req, res){
 
     let data = req.body
 
-    console.log(data.La + ' ' + data.Ma) 
+    console.log(data.Ma + ' ' + data.La) 
 
     //get position data for database with data, get image Path list
 
-    //insert select data to sendData
 
+
+
+    //insert select data to sendData
     let sendData= []
 
-    sendData.push(data)
+    for(let i=0;i<3;i++){
+        let packData = {}
+
+        let filePath = __dirname + '/image' + i + '.jpg'
+        let imageData = fs.readFileSync(filePath, function(err) {
+            if(err) throw err
+        })
+
+        packData.latitude = data.La
+        packData.longitude = data.Ma
+        packData.fishType = '열대어'
+        packData.fishLength = (Math.random() * 100).toFixed(1).toString() + 'cm'
+        packData.image = new Buffer.from(imageData).toString("base64")
+
+        sendData.push(packData)
+    }
+
+    //sendData.push(data)
 
     res.send(sendData)
 })
