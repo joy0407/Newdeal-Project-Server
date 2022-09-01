@@ -4,7 +4,7 @@ import path from "path"
 import multer from "multer"
 import fs from "fs"
 import JSZip from "jszip"
-import cors from  "cors"
+import cors from "cors"
 import { Blob } from "buffer"
 
 //module타입 코딩에서는 __dirname이 정의되어있지않음, 수동으로 직접 정의
@@ -14,9 +14,11 @@ const __dirname = path.resolve()
 const app = express()
 const port = 3000
 
-app.use(cors({
-    Origin : 'https://nunukang.shop:3000'
-}))
+// app.use(cors({
+//     Origin : 'http://localhost:3000'
+// }))
+
+app.use(cors())
 
 
 //Mysql 연결설정
@@ -68,13 +70,13 @@ app.use(cors({
 
 
 //express 서버 실행
-app.listen(port, function() {
+app.listen(port, function () {
     console.log(`Example app listen on port ${port}`)
 })
 
 
 //날씨 응답
-app.post('/weather/dailyWeather', function(req, res){
+app.post('/weather/dailyWeather', function (req, res) {
     res.sendFile(__dirname + '/dailyWeather.json')
     console.log('send daily weather file')
 })
@@ -83,7 +85,7 @@ app.post('/weather/dailyWeather', function(req, res){
 
 
 //지도 기반 유저 물고기 사진 띄우기
-app.post('/mapFish/userBase', function(req, res){
+app.post('/mapFish/userBase', function (req, res) {
     //여러개의 이미지 파일 한번에 전송하기
 
     let zip = new JSZip()
@@ -92,11 +94,11 @@ app.post('/mapFish/userBase', function(req, res){
 
     //zip 파일 생성 in nodejs
     //참조링크 : https://stuk.github.io/jszip/documentation/howto/write_zip.html
-    zip.generateNodeStream({type:'nodebuffer', streamFiles:true})
-    .pipe(fs.createWriteStream('test.zip'))
-    .on('finish', function(){
-        console.log('zip file written')
-    })
+    zip.generateNodeStream({ type: 'nodebuffer', streamFiles: true })
+        .pipe(fs.createWriteStream('test.zip'))
+        .on('finish', function () {
+            console.log('zip file written')
+        })
 
     res.sendFile(__dirname + '/test.zip')
 })
@@ -110,27 +112,27 @@ app.post('/mapFish/userBase', function(req, res){
 //물고기 정보 수신, echo로 되돌려줌
 
 //파일처리를 위한 multer모듈 설정
-const upload = multer({dest : 'uploads/'})
-const cpUpload = upload.fields([{name : 'fish', maxCount : 1}])
+const upload = multer({ dest: 'uploads/' })
+const cpUpload = upload.fields([{ name: 'fish', maxCount: 1 }])
 
 //물고기 정보 수신 and 송신
-app.post('/matchFish/caculateData', cpUpload,  function(req, res){
-    
+app.post('/matchFish/caculateData', cpUpload, function (req, res) {
+
     console.log("receive image file data")
 
     //file 이름과 확장자를 재정의, 전달받을시 파일형식이 존재하지않음
     let oldPath = __dirname + '/' + req.files['fish'][0].path
     let newPath = __dirname + '/' + req.files['fish'][0].path + '.jpg'
 
-    fs.renameSync(oldPath, newPath, function(error){
-        if(error) throw error
+    fs.renameSync(oldPath, newPath, function (error) {
+        if (error) throw error
     })
 
     //let data = fs.readFileSync(newPath, "base64")
 
-   
-    let data = fs.readFileSync(newPath, function(err) {
-        if(err) throw err
+
+    let data = fs.readFileSync(newPath, function (err) {
+        if (err) throw err
     })
 
     //res.send(data)
@@ -156,7 +158,7 @@ app.post('/matchFish/caculateData', cpUpload,  function(req, res){
     //res.sendFile(newPath)
 })
 
-app.get('/matchFish/caculateData', function(req, res){
+app.get('/matchFish/caculateData', function (req, res) {
     let image = __dirname + '/image.jpg'
     res.sendFile(image)
 
@@ -165,8 +167,8 @@ app.get('/matchFish/caculateData', function(req, res){
 
 //text filed 테스트, x-www-form-urlencoded형태의 데이터를 인식
 app.use('/matchFish.receiveData', express.json())
-app.use('/matchFish/receiveData', express.urlencoded({extended:true}))
-app.post('/matchFish/receiveData', function(req, res){
+app.use('/matchFish/receiveData', express.urlencoded({ extended: true }))
+app.post('/matchFish/receiveData', function (req, res) {
     console.log('for body test')
 
     console.log(req.body)
@@ -176,28 +178,28 @@ app.post('/matchFish/receiveData', function(req, res){
 
 
 // rank전송용
-app.post('/rank/fish', function(req, res){
+app.post('/rank/fish', function (req, res) {
     console.log('rankFish')
 
     let data = []
 
-    data.push({'rank' : 1, 'length' : 15})
-    data.push({'rank' : 2, 'length' : 14})
-    data.push({'rank' : 3, 'length' : 13})
-    data.push({'rank' : 4, 'length' : 12})
+    data.push({ 'rank': 1, 'length': 15 })
+    data.push({ 'rank': 2, 'length': 14 })
+    data.push({ 'rank': 3, 'length': 13 })
+    data.push({ 'rank': 4, 'length': 12 })
 
     res.send(data)
 })
 
 // map전송 테스트
-app.get('/map/fish', function(req, res){
+app.get('/map/fish', function (req, res) {
     console.log('mapFish')
 
     //use image Path list
 
     let filePath = __dirname + '/image.jpg'
-    let data = fs.readFileSync(filePath, function(err) {
-        if(err) throw err
+    let data = fs.readFileSync(filePath, function (err) {
+        if (err) throw err
     })
 
     let sendData = new Buffer.from(data).toString("base64")
@@ -206,19 +208,19 @@ app.get('/map/fish', function(req, res){
 })
 
 app.use('/map/center', express.json())
-app.use('/map/center', express.urlencoded({extended:true}))
-app.post('/map/center', function(req, res){
+app.use('/map/center', express.urlencoded({ extended: true }))
+app.post('/map/center', function (req, res) {
     console.log('mapCenter')
 
     let data = req.body
 
-    console.log(data.La + ' ' + data.Ma) 
+    console.log(data.La + ' ' + data.Ma)
 
     //get position data for database with data, get image Path list
 
     //insert select data to sendData
 
-    let sendData= []
+    let sendData = []
 
     sendData.push(data)
 
