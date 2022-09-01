@@ -33,35 +33,35 @@ app.use(cors({
 //-------------------------------------------------
 //테스트용 입력
 
-app.post('/',function(req, res) {
-    //res.send('Hello World!')
-    connetion.query('select * from userinfo', function(error, row){
-        if(error) throw error
-        console.log('user info is:', row)
-        res.send(row)
-    })
-})
+// app.post('/',function(req, res) {
+//     //res.send('Hello World!')
+//     connetion.query('select * from userinfo', function(error, row){
+//         if(error) throw error
+//         console.log('user info is:', row)
+//         res.send(row)
+//     })
+// })
 
-app.get('/', function(req, res){
-    res.send('hello world!')
-})
+// app.get('/', function(req, res){
+//     res.send('hello world!')
+// })
 
-app.post('/user/image', function(req, res){
-    res.sendFile(__dirname + '/image.jpg', function(error){
-        if(error) throw error
-        console.log('send image')
-    })
-})
+// app.post('/user/image', function(req, res){
+//     res.sendFile(__dirname + '/image.jpg', function(error){
+//         if(error) throw error
+//         console.log('send image')
+//     })
+// })
 
-app.post('/user', function(req, res){
+// app.post('/user', function(req, res){
 
-    //sendFile함수에서 파일경로를 절대경로를 요구함
-    //__dirname으로 디렉토리까지의 절대경로를 가져옴
-    res.sendFile(__dirname + '/seoul_kangnam_gu.json', function(error){
-        if(error) throw error
-        console.log('send image')
-    })
-})
+//     //sendFile함수에서 파일경로를 절대경로를 요구함
+//     //__dirname으로 디렉토리까지의 절대경로를 가져옴
+//     res.sendFile(__dirname + '/seoul_kangnam_gu.json', function(error){
+//         if(error) throw error
+//         console.log('send image')
+//     })
+// })
 
 //-----------------------------------------------------
 //프로젝트용 소스코드
