@@ -15,12 +15,14 @@ const app = express()
 const port = 3000
 
 //http 통신프로토콜을 위한 코드
-app.use(    ({
-    Origin : 'https://nunutest.shop/'
-}))
+// app.use(    ({
+//     Origin : 'https://nunutest.shop/'
+// }))
 
-// app.use(cors(
-// ))
+ app.use(cors({
+     Origin : 'https://nunutest.shop/'
+    }
+ ))
 
 
 
