@@ -20,7 +20,7 @@ const port = 3000
 // }))
 
 app.use(cors({
-    Origin : '*'
+    Origin : 'https://nunukang.shop'
     }
 ))
 
