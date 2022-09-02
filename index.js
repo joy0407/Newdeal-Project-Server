@@ -19,9 +19,7 @@ const port = 3000
 //     Origin : 'https://nunutest.shop/'
 // }))
 
- app.use(cors({
-     Origin : 'https://nunutest.shop/'
-    }
+ app.use(cors(
  ))
 
 
