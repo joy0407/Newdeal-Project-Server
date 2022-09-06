@@ -1,11 +1,9 @@
 let db = require('../lib/db');
-let bcryptjs = require('bcryptjs');
 let shortid = require('shortid');
 
 module.exports = (app) => {
 
   let passport = require('passport')
-  let LocalStrategy = require('passport-local').Strategy
   let GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
   let NaverStrategy = require('passport-naver').Strategy;
   let KakaoStrategy = require('passport-kakao').Strategy;
@@ -21,34 +19,6 @@ module.exports = (app) => {
     let user = db.get('users').find({id:id}).value();
     done(null, user)
   });
-
-  passport.use(new LocalStrategy({
-          usernameField: 'email',
-          passwordField: 'pwd'
-      },
-      function (email, password, done) {
-        let user = db.get('users').find({
-          email: email
-        }).value();
-        if (user) {
-          bcryptjs.compare(password, user.password, function(err,result){
-            if(result){
-                return done(null, user, {
-                    message: 'Welcome.'
-                });
-            } else {
-                return done(null, false, {
-                    message: 'Password is not correct.'
-                });
-            }
-          });
-        } else {
-          return done(null, false, {
-            message: 'There is no email'
-          })
-        }
-      }
-  ));
 
   // google social login
   let googleCredentials = require('../config/google.json');
@@ -175,6 +145,5 @@ module.exports = (app) => {
   (req, res) => {
       res.redirect('/');
   });
-
   return passport;
 } 
