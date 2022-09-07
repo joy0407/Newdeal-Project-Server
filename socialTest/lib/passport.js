@@ -1,17 +1,21 @@
-let db = require('../lib/db');
-let shortid = require('shortid');
+import db from './db.js';
+import shortid from 'shortid';
 
-module.exports = (app) => {
+import passport from 'passport'
+import {OAuth2Strategy as GoogleStrategy} from 'passport-google-oauth';
+import {Strategy as NaverStrategy} from 'passport-naver';
+import {Strategy as KakaoStrategy} from 'passport-kakao';
 
-  let passport = require('passport')
-  let GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
-  let NaverStrategy = require('passport-naver').Strategy;
-  let KakaoStrategy = require('passport-kakao').Strategy;
+import googleCredentials from '../config/google.json' assert {type: "json"};
+import naverCredentials from '../config/naver.json' assert {type: "json"};
+import kakaoCredentials from '../config/kakao.json' assert {type: "json"};
 
+export default (app) => {
   app.use(passport.initialize());
   app.use(passport.session());
 
   passport.serializeUser(function (user, done) {
+      console.log(user)
       done(null, user.id);
   });
 
@@ -21,7 +25,6 @@ module.exports = (app) => {
   });
 
   // google social login
-  let googleCredentials = require('../config/google.json');
   passport.use(new GoogleStrategy(
     {
       clientID: googleCredentials.web.client_id,
@@ -45,27 +48,24 @@ module.exports = (app) => {
           db.get('users').push(user).write();
       }
       done(null, user);
-      // User.findOrCreate({ googleId: profile.id }, (err, user) => {
-      //   return done(err, user);
-      // });
     }
   ));
 
-  app.get('/auth/google',
+  app.get('/login/google',
   passport.authenticate('google', {
       scope: ['https://www.googleapis.com/auth/plus.login','email']
   }));
 
-  app.get('/auth/google/callback',
+  app.get('/login/google/callback',
   passport.authenticate('google', {
-      failureRedirect: '/auth/login'
+      failureRedirect: '/login'
   }),
   (req, res) => {
-      res.redirect('/');
+    console.log(req.user.displayName)
+    res.json(req.user.displayName)
   });
 
   // naver social login
-  let naverCredentials = require('../config/naver.json');
   passport.use(new NaverStrategy(
     {
       clientID: naverCredentials.naver.client_id,
@@ -92,21 +92,21 @@ module.exports = (app) => {
     }
   ));
 
-  app.get('/auth/naver',
+  app.get('/login/naver',
   passport.authenticate('naver', {
       scope: ['https://nid.naver.com/oauth2.0/authorize','email']
   }));
 
-  app.get('/auth/naver/callback',
+  app.get('/login/naver/callback',
   passport.authenticate('naver', {
-      failureRedirect: '/auth/login'
+      failureRedirect: '/login'
   }),
   (req, res) => {
-      res.redirect('/');
+    console.log(req.user.displayName)
+    res.json(req.user.displayName)
   });
 
   // kakao social login
-  let kakaoCredentials = require('../config/kakao.json');
   passport.use(new KakaoStrategy(
     {
       clientID: kakaoCredentials.kakao.client_id,
@@ -133,17 +133,25 @@ module.exports = (app) => {
     }
   ));
 
-  app.get('/auth/kakao',
+  app.get('/login/kakao',
   passport.authenticate('kakao', {
-      scope: ['account_email']
+      scope: ['profile_nickname', 'account_email']
   }));
 
-  app.get('/auth/kakao/callback',
+  app.get('/login/kakao/callback',
   passport.authenticate('kakao', {
-      failureRedirect: '/auth/login'
+      failureRedirect: '/login'
   }),
   (req, res) => {
-      res.redirect('/');
+    console.log(req.user.displayName)
+    res.json(req.user.displayName)
   });
+
+  app.get('/logout', (req,res)=>{
+    req.session.destroy(function(err){
+        if(err) throw err;
+        res.redirect('/login');
+    })
+})
   return passport;
-} 
+}

@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   HTML:(body, control,authStatusUI)=>{
     return `
     <!doctype html>
