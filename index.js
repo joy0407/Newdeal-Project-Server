@@ -1,10 +1,11 @@
 import express from "express"
-import mysql from "mysql"
+import mysql from "mysql2/promise"
 import path from "path"
 import multer from "multer"
 import fs from "fs"
 import JSZip from "jszip"
 import cors from  "cors"
+import pythonShell from "python-shell"
 
 
 //module타입 코딩에서는 __dirname이 정의되어있지않음, 수동으로 직접 정의
@@ -22,17 +23,21 @@ app.use(cors({
     credentials: true, 
   }));
 
+// app.use(cors({
+//     origin :'http://localhost:8080'
+// }))
+
 
 
 //Mysql 연결설정
-// const connetion = mysql.createConnection({
-//     host : 'localhost',
-//     user : 'root',
-//     password : '0000',
-//     database : 'test'
-// })
+const connetion = await mysql.createConnection({
+    host : 'localhost',
+    user : 'root',
+    password : '0000',
+    database : 'test'
+})
 
-// connetion.connect()
+//connetion.connect()
 
 
 //-------------------------------------------------
@@ -139,7 +144,6 @@ app.post('/matchFish/caculateData', cpUpload, function (req, res) {
 
     fs.renameSync(oldPath, newPath, function(error){
         if(error) throw error
-
     })
 
     //let data = fs.readFileSync(newPath, "base64")
@@ -149,6 +153,46 @@ app.post('/matchFish/caculateData', cpUpload, function (req, res) {
         if (err) throw err
     })
 
+    // result.stdout.on('data', function(data) {
+    //     console.log(data.toString(''))
+    // })
+
+    // result.stderr.on('data', function(data) {
+    //     console.log(data.toString() + ' err')
+    // })
+
+    let option = {
+        mode : 'text',
+        pythonPath : '',
+        pythonOptions : ['-u'],
+        scripPath : '',
+        args : [],
+        encoding : 'utf8'
+    }
+
+    pythonShell.PythonShell.run('print.py', option, function(err, result){
+        if(err) console.log(err)
+        else {
+            let data = result
+            //let text = data.toString('utf-8')
+
+            console.log(data)
+        }
+    })
+
+    let length = Math.random() * 100
+    let fishType = '열대어'
+    let imageName = req.files['fish'][0].path + '.jpg'
+
+    length = length.toFixed(2).toString() + 'cm'
+    imageName = imageName.split('\\')[1]
+    console.log(imageName)
+
+
+    connetion.query('insert into catchFishData (user, fishType, fishLength, latitude, longitude, imagePath) values (?,?,?,?,?,?)', ['test', fishType, length, location.latitude, location.longitude, imageName], function(err, row, filed) {
+        if(err) console.log(err)
+    })
+
     //res.send(data)
 
     //send base64
@@ -156,12 +200,12 @@ app.post('/matchFish/caculateData', cpUpload, function (req, res) {
     //console.log(sendData)
     //res.send(sendData)
 
-    let length = Math.random() * 100
+   
 
     let sendData = {}
 
-    sendData.fishType = '열대어'
-    sendData.fishLength = length.toFixed(2).toString() + 'cm'
+    sendData.fishType = fishType
+    sendData.fishLength = length
     sendData.imageData = new Buffer.from(data).toString("base64")
 
     res.send(sendData)
@@ -232,7 +276,7 @@ app.get('/map/fish', function (req, res) {
 
 app.use('/map/center', express.json())
 app.use('/map/center', express.urlencoded({ extended: true }))
-app.post('/map/center', function (req, res) {
+app.post('/map/center', async function (req, res) {
     console.log('mapCenter')
 
     let data = req.body
@@ -241,28 +285,37 @@ app.post('/map/center', function (req, res) {
 
     //get position data for database with data, get image Path list
 
-
-
+    let [selectData] = await connetion.query('select * from catchFishData')
 
     //insert select data to sendData
     let sendData= []
 
-    for(let i=0;i<3;i++){
+    for(let i=0;i<selectData.length;i++){
         let packData = {}
 
-        let filePath = __dirname + '/image' + i + '.jpg'
+        //let filePath = __dirname + '/image' + i + '.jpg'
+        let filePath = __dirname + '/uploads/' + selectData[i].imagePath
         let imageData = fs.readFileSync(filePath, function(err) {
             if(err) throw err
         })
 
-        packData.latitude = data.La
-        packData.longitude = data.Ma
-        packData.fishType = '열대어'
-        packData.fishLength = (Math.random() * 100).toFixed(1).toString() + 'cm'
+        //packData.latitude = data.La
+        //packData.longitude = data.Ma
+        //packData.fishType = '열대어'
+        //packData.fishLength = (Math.random() * 100).toFixed(1).toString() + 'cm'
+        
+        packData.latitude = selectData[i].latitude
+        packData.longitude = selectData[i].longitude
+        packData.fishType = selectData[i].fishType
+        packData.fishLength = selectData[i].fishLength
         packData.image = new Buffer.from(imageData).toString("base64")
+
+        console.log(i)
 
         sendData.push(packData)
     }
+
+    console.log('end')
 
     //sendData.push(data)
 
