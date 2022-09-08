@@ -18,14 +18,14 @@ const port = 3000
 
 // accesss allow url list (CORS : 통신 프로토콜이 서로 다를때 헤더에 담아 허가해줌) 
 // 다음 함수 실행으로 header 에 Access-Control-Allow-Origin:'https://nunutest.shop' 데이터를 서브해 줄 클라이언트
-app.use(cors({
-    origin: 'https://nunutest.shop',
-    credentials: true, 
-  }));
-
 // app.use(cors({
-//     origin :'http://localhost:8080'
-// }))
+//     origin: 'https://nunutest.shop',
+//     credentials: true, 
+//   }));
+
+app.use(cors({
+    origin :'http://localhost:8080'
+}))
 
 
 
@@ -245,15 +245,30 @@ app.post('/matchFish/receiveData', function (req, res) {
 
 
 // rank전송용
+app.use('/rank/fish', express.json())
+app.use('/rank/fish', express.urlencoded({extended : true}))
 app.post('/rank/fish', function (req, res) {
     console.log('rankFish')
 
     let data = []
 
-    data.push({ 'rank': 1, 'length': 15 })
-    data.push({ 'rank': 2, 'length': 14 })
-    data.push({ 'rank': 3, 'length': 13 })
-    data.push({ 'rank': 4, 'length': 12 })
+    console.log(req.body)
+
+    if(req.body.fishType == '참돔')
+    {
+        data.push({ 'rank': 1, 'length': 15 })
+        data.push({ 'rank': 2, 'length': 14 })
+        data.push({ 'rank': 3, 'length': 13 })
+        data.push({ 'rank': 4, 'length': 12 })
+    }
+    else
+    {
+        data.push({ 'rank': 10, 'length': 51 })
+        data.push({ 'rank': 11, 'length': 41 })
+        data.push({ 'rank': 12, 'length': 31 })
+        data.push({ 'rank': 13, 'length': 21 })
+    }
+
 
     res.send(data)
 })
