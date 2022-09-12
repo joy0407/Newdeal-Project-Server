@@ -170,12 +170,22 @@ app.post('/matchFish/caculateData', cpUpload, function (req, res) {
         encoding : 'utf8'
     }
 
-    pythonShell.PythonShell.run('print.py', option, function(err, result){
+    pythonShell.PythonShell.run('checkFishLength.py', option, function(err, result){
         if(err) console.log(err)
         else {
             let data = result
             //let text = data.toString('utf-8')
+            console.log('run')
+            console.log(data)
+        }
+    })
 
+    pythonShell.PythonShell.run('checkFishType.py', option, function(err, result){
+        if(err) console.log(err)
+        else {
+            let data = result
+            //let text = data.toString('utf-8')
+            console.log('run')
             console.log(data)
         }
     })
@@ -189,9 +199,9 @@ app.post('/matchFish/caculateData', cpUpload, function (req, res) {
     console.log(imageName)
 
 
-    connetion.query('insert into catchFishData (user, fishType, fishLength, latitude, longitude, imagePath) values (?,?,?,?,?,?)', ['test', fishType, length, location.latitude, location.longitude, imageName], function(err, row, filed) {
-        if(err) console.log(err)
-    })
+    // connetion.query('insert into catchFishData (user, fishType, fishLength, latitude, longitude, imagePath) values (?,?,?,?,?,?)', ['test', fishType, length, location.latitude, location.longitude, imageName], function(err, row, filed) {
+    //     if(err) console.log(err)
+    // })
 
     //res.send(data)
 
