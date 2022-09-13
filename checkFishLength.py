@@ -15,15 +15,22 @@ import numpy as np
 import imutils
 import cv2
 import matplotlib.pyplot as plt
+import sys
 
 ## 원본 이미지 불러오고 배경 제거
 
 #!pip install removebg # 배경제거 라이브러리 removebg
 from removebg import RemoveBg
 
-path = 'image.jpg' # 원본 이미지 경로 입력
-rmbg = RemoveBg("EDTerV9xcfE3wRJbWLU1UiGd", "error.log") # api키 입력
-rmbg.remove_background_from_img_file(path) # 원본 이미지의 배경을 제거하고 png파일로 저장
+
+
+#path = 'image.jpg' # 원본 이미지 경로 입력
+#path = 'uploads/image1.jpg'
+path = sys.argv[1]
+
+print(path)
+#rmbg = RemoveBg("EDTerV9xcfE3wRJbWLU1UiGd", "error.log") # api키 입력
+#rmbg.remove_background_from_img_file(path) # 원본 이미지의 배경을 제거하고 png파일로 저장
 
 
 
@@ -32,14 +39,17 @@ image_nbg = cv2.imread(path+'_no_bg.png') # 배경제거된 이미지 불러오�
 plt.imshow(image_nbg) # 배경제거된 이미지 출력
 
 ## 객체 크기 측정
+#ap = argparse.ArgumentParser() # 파이썬 인자값을 받을 인스턴스 생성
+#ap.add_argument("-i", "--image", default = image_nbg) # 배경을 제거한 이미지 불러오는 argument 추가
+#ap.add_argument("-w", "--width", type=float, default=8.8) # 특정 객체의 길이값 8.8로 고정하는 argument 추가
+#ap.add_argument('-f') # 더미 변수
 
-ap = argparse.ArgumentParser() # 파이썬 인자값을 받을 인스턴스 생성
-ap.add_argument("-i", "--image", default = image_nbg) # 배경을 제거한 이미지 불러오는 argument 추가
-ap.add_argument("-w", "--width", type=float, default=8.8) # 특정 객체의 길이값 8.8로 고정하는 argument 추가
-ap.add_argument('-f') # 더미 변수
-args = vars(ap.parse_args())
+#print(ap)
 
-image_1 = args['image'] # 이미지 불러오기
+#args = vars(ap.parse_args())
+
+#image_1 = args['image'] # 이미지 불러오기
+image_1 = image_nbg
 gray = cv2.cvtColor(image_1, cv2.COLOR_BGR2GRAY) # 배경제거한 이미지 회색조로 변환하고 불러오기
 gray = cv2.GaussianBlur(gray, (7, 7), 0) # 지정한 커널(7,7)에 맞춰 블러처리
 
@@ -59,6 +69,8 @@ def midpoint(ptA, ptB):
 count = 0
 c = max(cnts, key=cv2.contourArea)
 
+dimA = 0
+dimB = 0
 
 for c in cnts:
     if cv2.contourArea(c) < 1000:
@@ -67,6 +79,8 @@ for c in cnts:
         
          # 이미지 맨 왼쪽에 위치한 기준객체의 면적구하기
     
+    print(count)
+
     count += 1
     if count==3:
       break              # 기준 객체와 물고기 객체만 인식하도록 설정
@@ -101,7 +115,9 @@ for c in cnts:
     dB = dist.euclidean((tlblX, tlblY), (trbrX, trbrY)) # 직사각형의 너비 구하기
 
     if pixelPerMetric is None:
-        pixelPerMetric = dA / args["width"] # 고정된 높이 값(8.8)을 픽셀 당 단위로 주기
+        pixelPerMetric = dA / 8.8
+        #pixelPerMetric = dA / args["width"] # 고정된 높이 값(8.8)을 픽셀 당 단위로 주기
+
 
     dimA = dA / pixelPerMetric # 실제 높이 값
     dimB = dB / pixelPerMetric # 실제 너비 값
@@ -113,9 +129,9 @@ for c in cnts:
 
     plt.imshow(orig)
     plt.axis('off')
-    plt.show() # 화면 출력
+    #plt.show() # 화면 출력
     
 utf8stdout = open(1, 'w', encoding='utf-8', closefd=False)
-print("측정길이:", "{:.1f}cm".format(dimA), file=utf8stdout) 
-print("측정너비:", "{:.1f}cm".format(dimB), file=utf8stdout)
+print("측정길이:","{:.1f}cm".format(dimA), file=utf8stdout) 
+print("측정너비:","{:.1f}cm".format(dimB), file=utf8stdout)
 

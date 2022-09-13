@@ -15,6 +15,7 @@ from tensorflow.keras.applications.inception_resnet_v2 import preprocess_input
 from keras.models import load_model
 from tensorflow.keras.preprocessing.image import img_to_array, load_img
 import numpy as np
+import sys
 
 ## 모델 불러오기
 model = load_model('checkFishType.h5') # 모델 경로 입력
@@ -22,7 +23,7 @@ model = load_model('checkFishType.h5') # 모델 경로 입력
 ## 모델에 이미지 넣고 예측
 
 IMAGE_SIZE    = (224, 224) # 모델에 넣기 전 이미지 사이즈 조정
-test_image = image.load_img('image.jpg' # 이미지 경로 입력
+test_image = image.load_img( sys.argv[1] # 이미지 경로 입력
                             ,target_size =IMAGE_SIZE )
 test_image = image.img_to_array(test_image)
 
@@ -38,6 +39,6 @@ utf8stdout = open(1, 'w', encoding='utf-8', closefd=False)
 class_dictionary = {'감성돔':0,'넙치':1,'돌돔':2, '조피볼락':3, '참돔':4}
 for x in class_dictionary:
   if class_dictionary[x] == (df[df == df.iloc[0]].index[0]):
-    print(f"어종: {x}", file=utf8stdout)
+    print(f"어종:{x}", file=utf8stdout)
     break
 

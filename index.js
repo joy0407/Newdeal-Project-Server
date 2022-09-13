@@ -166,7 +166,7 @@ app.post('/matchFish/caculateData', cpUpload, function (req, res) {
         pythonPath : '',
         pythonOptions : ['-u'],
         scripPath : '',
-        args : [],
+        args : [req.files['fish'][0].path + '.jpg'],
         encoding : 'utf8'
     }
 
@@ -175,8 +175,11 @@ app.post('/matchFish/caculateData', cpUpload, function (req, res) {
         else {
             let data = result
             //let text = data.toString('utf-8')
-            console.log('run')
-            console.log(data)
+            //console.log('run')
+            //console.log(data)
+
+            console.log(data[0].split(':')[1].replaceAll(' ', '').replaceAll('cm',''))
+            console.log(data[1].split(':')[1].replaceAll(' ', '').replaceAll('cm',''))
         }
     })
 
@@ -185,8 +188,10 @@ app.post('/matchFish/caculateData', cpUpload, function (req, res) {
         else {
             let data = result
             //let text = data.toString('utf-8')
-            console.log('run')
-            console.log(data)
+            //console.log('run')
+            //console.log(data)
+
+            console.log(data[2].split(':')[1])
         }
     })
 
