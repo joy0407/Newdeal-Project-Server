@@ -115,6 +115,111 @@ app.post('/mapFish/userBase', function (req, res) {
 
 
 
+async function runPythonLength(path)
+{
+    return await new Promise(resolve => {
+        let option = {
+            mode : 'text',
+            pythonPath : '',
+            pythonOptions : ['-u'],
+            scripPath : '',
+            args : [path],
+            encoding : 'utf8'
+        }
+    
+        let returnData = {}
+    
+        pythonShell.PythonShell.run('checkFishLength.py', option, function(err, result){
+            if(err) console.log(err)
+            else {
+                let data = result
+                //let text = data.toString('utf-8')
+                //console.log('run')
+                //console.log(data)
+    
+                console.log('height ' + data[0].split(':')[1].replaceAll(' ', '').replaceAll('cm',''))
+                console.log('width' + data[1].split(':')[1].replaceAll(' ', '').replaceAll('cm',''))
+    
+                returnData.height = data[0].split(':')[1].replaceAll(' ', '').replaceAll('cm','')
+                returnData.width = data[1].split(':')[1].replaceAll(' ', '').replaceAll('cm','')
+            
+                //return resolve(result)
+                //return returnData
+                return resolve(returnData)
+            }
+        })
+    
+        // pythonShell.PythonShell.run('checkFishType.py', option, function(err, result){
+        //     if(err) console.log(err)
+        //     else {
+        //         let data = result
+        //         //let text = data.toString('utf-8')
+        //         //console.log('run')
+        //         //console.log(data)
+    
+        //         console.log(data[2].split(':')[1])
+        //         returnData.type = data[2].split(':')[1]
+        //     }
+        // })
+    
+        console.log("await end")
+        
+    })
+}
+
+async function runPythonType(path) {
+    return await new Promise(resolve => {
+        let option = {
+            mode : 'text',
+            pythonPath : '',
+            pythonOptions : ['-u'],
+            scripPath : '',
+            args : [path],
+            encoding : 'utf8'
+        }
+    
+        let returnData = {}
+    
+        // pythonShell.PythonShell.run('checkFishLength.py', option, function(err, result){
+        //     if(err) console.log(err)
+        //     else {
+        //         let data = result
+        //         //let text = data.toString('utf-8')
+        //         //console.log('run')
+        //         //console.log(data)
+    
+        //         console.log(data[0].split(':')[1].replaceAll(' ', '').replaceAll('cm',''))
+        //         console.log(data[1].split(':')[1].replaceAll(' ', '').replaceAll('cm',''))
+    
+        //         returnData.height = data[0].split(':')[1].replaceAll(' ', '').replaceAll('cm','')
+        //         returnData.width = data[1].split(':')[1].replaceAll(' ', '').replaceAll('cm','')
+            
+        //         //return resolve(result)
+        //         //return returnData
+        //         return resolve(returnData)
+        //     }
+        // })
+    
+        pythonShell.PythonShell.run('checkFishType.py', option, function(err, result){
+            if(err) console.log(err)
+            else {
+                let data = result
+                //let text = data.toString('utf-8')
+                //console.log('run')
+                //console.log(data)
+    
+                console.log(data[2].split(':')[1])
+                returnData.type = data[2].split(':')[1]
+
+                return resolve(returnData)
+            }
+        })
+    
+        console.log("await end")
+        
+    })
+}
+
 //물고기 종류, 길이 판정 수신, 전송
 
 //물고기 정보 수신, echo로 되돌려줌
@@ -124,7 +229,7 @@ const upload = multer({ dest: 'uploads/' })
 const cpUpload = upload.fields([{ name: 'fish', maxCount: 1 }])
 
 //물고기 정보 수신 and 송신
-app.post('/matchFish/caculateData', cpUpload, function (req, res) {
+app.post('/matchFish/caculateData', cpUpload, async function (req, res) {
 
     console.log("receive image file data")
 
@@ -161,47 +266,57 @@ app.post('/matchFish/caculateData', cpUpload, function (req, res) {
     //     console.log(data.toString() + ' err')
     // })
 
-    let option = {
-        mode : 'text',
-        pythonPath : '',
-        pythonOptions : ['-u'],
-        scripPath : '',
-        args : [req.files['fish'][0].path + '.jpg'],
-        encoding : 'utf8'
-    }
+    let pythonDataLength = await runPythonLength(newPath)
+    let pythonDataType = await runPythonType(newPath)
 
-    pythonShell.PythonShell.run('checkFishLength.py', option, function(err, result){
-        if(err) console.log(err)
-        else {
-            let data = result
-            //let text = data.toString('utf-8')
-            //console.log('run')
-            //console.log(data)
+    //console.log(pythonData)
+    console.log("test")
+    //console.log(pythonData)
 
-            console.log(data[0].split(':')[1].replaceAll(' ', '').replaceAll('cm',''))
-            console.log(data[1].split(':')[1].replaceAll(' ', '').replaceAll('cm',''))
-        }
-    })
+    // let option = {
+    //     mode : 'text',
+    //     pythonPath : '',
+    //     pythonOptions : ['-u'],
+    //     scripPath : '',
+    //     args : [req.files['fish'][0].path + '.jpg'],
+    //     encoding : 'utf8'
+    // }
 
-    pythonShell.PythonShell.run('checkFishType.py', option, function(err, result){
-        if(err) console.log(err)
-        else {
-            let data = result
-            //let text = data.toString('utf-8')
-            //console.log('run')
-            //console.log(data)
+    // pythonShell.PythonShell.run('checkFishLength.py', option, function(err, result){
+    //     if(err) console.log(err)
+    //     else {
+    //         let data = result
+    //         //let text = data.toString('utf-8')
+    //         //console.log('run')
+    //         //console.log(data)
 
-            console.log(data[2].split(':')[1])
-        }
-    })
+    //         console.log(data[0].split(':')[1].replaceAll(' ', '').replaceAll('cm',''))
+    //         console.log(data[1].split(':')[1].replaceAll(' ', '').replaceAll('cm',''))
+    //     }
+    // })
 
-    let length = Math.random() * 100
-    let fishType = '열대어'
+    // pythonShell.PythonShell.run('checkFishType.py', option, function(err, result){
+    //     if(err) console.log(err)
+    //     else {
+    //         let data = result
+    //         //let text = data.toString('utf-8')
+    //         //console.log('run')
+    //         //console.log(data)
+
+    //         console.log(data[2].split(':')[1])
+    //     }
+    // })
+
+    // let length = Math.random() * 100
+    //let fishType = '열대어'
     let imageName = req.files['fish'][0].path + '.jpg'
 
-    length = length.toFixed(2).toString() + 'cm'
+    let length = parseFloat(pythonDataLength.height) > parseFloat(pythonDataLength.width) ? pythonDataLength.height : pythonDataLength.width
+    let fishType = pythonDataType.type
+
+    //length = length.toFixed(2).toString() + 'cm'
     imageName = imageName.split('\\')[1]
-    console.log(imageName)
+    //console.log(imageName)
 
 
     // connetion.query('insert into catchFishData (user, fishType, fishLength, latitude, longitude, imagePath) values (?,?,?,?,?,?)', ['test', fishType, length, location.latitude, location.longitude, imageName], function(err, row, filed) {
@@ -216,6 +331,7 @@ app.post('/matchFish/caculateData', cpUpload, function (req, res) {
     //res.send(sendData)
 
    
+    
 
     let sendData = {}
 

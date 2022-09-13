@@ -28,15 +28,35 @@ from removebg import RemoveBg
 #path = 'uploads/image1.jpg'
 path = sys.argv[1]
 
-print(path)
+#print(path)
 #rmbg = RemoveBg("EDTerV9xcfE3wRJbWLU1UiGd", "error.log") # api키 입력
 #rmbg.remove_background_from_img_file(path) # 원본 이미지의 배경을 제거하고 png파일로 저장
 
+#path = '/content/drive/MyDrive/test이미지2/testimage.jpg'
+image_bgr = cv2.imread(path) # 이미지 불러오기
+image_rgb = cv2.cvtColor(image_bgr, cv2.COLOR_BGR2RGB) # 이미지 색 배열을 bgr에서 rgb로 변환
 
+rectangle = (1, 1, image_rgb.shape[1]-1, image_rgb.shape[0]-1) # 객체 판별 범위 지정
 
-image_nbg = cv2.imread(path+'_no_bg.png') # 배경제거된 이미지 불러오기 (png파일)
+mask = np.zeros(image_rgb.shape[:2], np.uint8) # 마스크 지정
 
-plt.imshow(image_nbg) # 배경제거된 이미지 출력
+bgdModel = np.zeros((1, 65), np.float64) # 임시 배경 
+fgdModel = np.zeros((1, 65), np.float64) # 임시 전경
+
+cv2.grabCut(image_rgb, # 원본 이미지
+           mask,       # 마스크
+           rectangle,  # 판별 범위 사각형
+           bgdModel,   # 배경을 위한 임시 배열, 결과값 개선을 위해 설정
+           fgdModel,   # 전경을 위한 임시 배열, 결과값 개선을 위해 설정
+           5,          # 반복 횟수
+           cv2.GC_INIT_WITH_RECT) # 초기화 mode
+mask_2 = np.where((mask==2) | (mask==0), 0, 1).astype('uint8') # mask == 2 or mask == 0을 만족하면 0으로 설정 아니면 1로 설정
+
+image_rgb_nobg = image_rgb * mask_2[:, :, np.newaxis] # 차원 확장
+
+#image_nbg = cv2.imread(path+'_no_bg.png') # 배경제거된 이미지 불러오기 (png파일)
+
+#plt.imshow(image_nbg) # 배경제거된 이미지 출력
 
 ## 객체 크기 측정
 #ap = argparse.ArgumentParser() # 파이썬 인자값을 받을 인스턴스 생성
@@ -49,7 +69,7 @@ plt.imshow(image_nbg) # 배경제거된 이미지 출력
 #args = vars(ap.parse_args())
 
 #image_1 = args['image'] # 이미지 불러오기
-image_1 = image_nbg
+image_1 = image_rgb_nobg
 gray = cv2.cvtColor(image_1, cv2.COLOR_BGR2GRAY) # 배경제거한 이미지 회색조로 변환하고 불러오기
 gray = cv2.GaussianBlur(gray, (7, 7), 0) # 지정한 커널(7,7)에 맞춰 블러처리
 
@@ -59,7 +79,7 @@ edged = cv2.erode(edged, None, iterations=1) # 윤곽선을 배경으로 만듦
 
 cnts = cv2.findContours(edged, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE) # 윤곽선 정보 검출
 cnts = imutils.grab_contours(cnts) # 윤곽선 총갯수 구하기
-print("Total number of contours are: ", len(cnts))
+#print("Total number of contours are: ", len(cnts))
 
 (cnts, _) = contours.sort_contours(cnts, ) # 왼쪽에서 오른쪽으로 셀 정렬 ,method='left-to-right'
 pixelPerMetric = None # 1픽셀 대비 cm값을 구하는 함수
@@ -79,7 +99,7 @@ for c in cnts:
         
          # 이미지 맨 왼쪽에 위치한 기준객체의 면적구하기
     
-    print(count)
+    #print(count)
 
     count += 1
     if count==3:
