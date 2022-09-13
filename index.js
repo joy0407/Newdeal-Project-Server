@@ -38,7 +38,17 @@ const connetion = await mysql.createConnection({
 })
 
 //connetion.connect()
+// social Test - kakao
+app.use(express.json())
+app.post('/kakao',(req,res)=>{
+    console.log(req.body)
+    console.log(req.body.properties)
+    res.send(req.body.properties.nickname)
+});
 
+app.post('/naver',(req,res)=>{
+    console.log(req.body)
+});
 
 //-------------------------------------------------
 //테스트용 입력
