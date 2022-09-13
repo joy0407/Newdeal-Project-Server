@@ -39,13 +39,14 @@ const connetion = await mysql.createConnection({
 
 //connetion.connect()
 // social Test - kakao
-app.use(express.json())
+app.use('/kakao', express.json())
 app.post('/kakao',(req,res)=>{
     console.log(req.body)
     console.log(req.body.properties)
     res.send(req.body.properties.nickname)
 });
 
+app.use('/naver', express.json())
 app.post('/naver',(req,res)=>{
     console.log(req.body)
 });
