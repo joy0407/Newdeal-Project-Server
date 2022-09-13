@@ -1,0 +1,26 @@
+# 이미지 배경 제거
+
+path = '/content/drive/MyDrive/test이미지2/testimage.jpg'
+image_bgr = cv2.imread(path) # 이미지 불러오기
+image_rgb = cv2.cvtColor(image_bgr, cv2.COLOR_BGR2RGB) # 이미지 색 배열을 bgr에서 rgb로 변환
+
+rectangle = (1, 1, image_rgb.shape[1]-1, image_rgb.shape[0]-1) # 객체 판별 범위 지정
+
+mask = np.zeros(image_rgb.shape[:2], np.uint8) # 마스크 지정
+
+bgdModel = np.zeros((1, 65), np.float64) # 임시 배경 
+fgdModel = np.zeros((1, 65), np.float64) # 임시 전경
+
+cv2.grabCut(image_rgb, # 원본 이미지
+           mask,       # 마스크
+           rectangle,  # 판별 범위 사각형
+           bgdModel,   # 배경을 위한 임시 배열, 결과값 개선을 위해 설정
+           fgdModel,   # 전경을 위한 임시 배열, 결과값 개선을 위해 설정
+           5,          # 반복 횟수
+           cv2.GC_INIT_WITH_RECT) # 초기화 mode
+mask_2 = np.where((mask==2) | (mask==0), 0, 1).astype('uint8') # mask == 2 or mask == 0을 만족하면 0으로 설정 아니면 1로 설정
+
+image_rgb_nobg = image_rgb * mask_2[:, :, np.newaxis] # 차원 확장
+
+
+plt.imshow(image_rgb_nobg)
