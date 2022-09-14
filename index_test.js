@@ -34,27 +34,24 @@ const connetion = await mysql.createConnection({
     host : 'localhost',
     user : 'root',
     password : 'Gjwjddbs1234',
-    database : 'newdeal'
+    database : 'nunu'
 })
 
 //connetion.connect()
 // social Test - kakao
 app.use('/kakao', express.json())
-app.post('/kakao',(req,res)=>{
-    connetion.query(`SELECT id FROM users WHERE id = ?`,[req.body.id],(err,res)=>{
-        if (err) throw err;
-        console.log(res[0]);
-        if (res[0] === undefined){
-            db.query(`INSERT INTO users(id, email, nickname) VALUES (?,?,?)`,[req.body.id,req.body.email, req.body.properties.nickname],(err,res)=>{
-              console.log('Hello New Kakao Member!')
-            })
-          }
-          else{
-            console.log('Kakao success')
-          }
-    })
+app.post('/kakao',async (req,res)=>{
+    console.log(req.body.id)
+    let selectUser = await connetion.query(`SELECT id FROM users WHERE id = ?`,[req.body.id])
+    if (selectUser[0] === undefined){
+       connection.query(`INSERT INTO users(id, email, nickname) VALUES (?,?,?)`,[req.body.id,req.body.kakao_account.email, req.body.properties.nickname],(err,res)=>{
+         console.log('Hello New Kakao Member!')
+       })
+     }
+     else{
+       console.log('Kakao login success')
+    }
 });
-
 app.use('/naver', express.json())
 app.post('/naver',(req,res)=>{
     console.log(req.body)
