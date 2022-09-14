@@ -29,21 +29,30 @@ app.use(cors({
 
 
 
-//Mysql 연결설정
-// const connetion = await mysql.createConnection({
-//     host : 'localhost',
-//     user : 'root',
-//     password : '0000',
-//     database : 'test'
-// })
+// Mysql 연결설정
+const connetion = await mysql.createConnection({
+    host : 'localhost',
+    user : 'root',
+    password : 'Gjwjddbs1234',
+    database : 'newdeal'
+})
 
 //connetion.connect()
 // social Test - kakao
 app.use('/kakao', express.json())
 app.post('/kakao',(req,res)=>{
-    console.log(req.body)
-    console.log(req.body.properties)
-    res.send(req.body.properties.nickname)
+    connetion.query(`SELECT id FROM users WHERE id = ?`,[req.body.id],(err,res)=>{
+        if (err) throw err;
+        console.log(res[0]);
+        if (res[0] === undefined){
+            db.query(`INSERT INTO users(id, email, nickname) VALUES (?,?,?)`,[req.body.id,req.body.email, req.body.properties.nickname],(err,res)=>{
+              console.log('Hello New Kakao Member!')
+            })
+          }
+          else{
+            console.log('Kakao success')
+          }
+    })
 });
 
 app.use('/naver', express.json())
