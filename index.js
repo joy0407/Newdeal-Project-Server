@@ -36,7 +36,7 @@ const connetion = await mysql.createConnection({
     database : 'test'
 })
 
-connetion.connect()
+// connetion.connect()
 
 // social Test - kakao
 app.use('/kakao', express.json())

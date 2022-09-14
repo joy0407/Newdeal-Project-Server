@@ -33,24 +33,33 @@ app.use(cors({
 const connetion = await mysql.createConnection({
     host : 'localhost',
     user : 'root',
-    password : 'Gjwjddbs1234',
-    database : 'nunu'
+    password : '',
+    database : ''
 })
 
-//connetion.connect()
+connetion.connect()
+
 // social Test - kakao
 app.use('/kakao', express.json())
 app.post('/kakao',async (req,res)=>{
-    console.log(req.body.id)
+    console.log(req.body)
     let selectUser = await connetion.query(`SELECT id FROM users WHERE id = ?`,[req.body.id])
-    if (selectUser[0] === undefined){
-       connection.query(`INSERT INTO users(id, email, nickname) VALUES (?,?,?)`,[req.body.id,req.body.kakao_account.email, req.body.properties.nickname],(err,res)=>{
-         console.log('Hello New Kakao Member!')
-       })
+    if (selectUser[0][0] === undefined){
+       let connection = await mysql.createConnection({host: 'localhost',user: 'root',password: '',database: ''})
+       connection.connect()
+       
+       await connection.query(`INSERT INTO users(id, email, nickname, provider) VALUES (?,?,?,?)`,[req.body.id,req.body.kakao_account.email, req.body.properties.nickname, 'kakao'])
+       console.log('Hello! Kakao new member')
      }
      else{
        console.log('Kakao login success')
     }
+    let data = {
+        id: req.body.id,
+        nickname: req.body.properties.nickname,
+        thumnail: req.body.properties.thumnail_image
+    }
+    res.send(data)
 });
 app.use('/naver', express.json())
 app.post('/naver',(req,res)=>{
