@@ -167,15 +167,15 @@ const getDetailData = async function(urlList) {
     })
 }
 
-const createJsonFile = async function() {
+const createJsonFile = function() {
 
     let finalData = []
 
     finalData = finalData.concat(dailyWeatherList)
 
-    let stringData = JSON.stringify(finalData)
+    let stringData = JSON.stringify(finalData, null, '\t')
 
-    await fs.writeFileSync('./dailyWeather.json', stringData)
+    fs.writeFileSync('./dailyWeather.json', stringData)
 
     page.close()
 }

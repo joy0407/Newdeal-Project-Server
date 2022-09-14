@@ -5,6 +5,7 @@ import multer from "multer"
 import fs from "fs"
 import cors from  "cors"
 import {runPythonLength, runPythonType} from "./pythonJS.js"
+import {caculateLocation} from "./functionJS.js"
 
 
 //module타입 코딩에서는 __dirname이 정의되어있지않음, 수동으로 직접 정의
@@ -35,7 +36,8 @@ const connetion = await mysql.createConnection({
     database : 'test'
 })
 
-//connetion.connect()
+connetion.connect()
+
 // social Test - kakao
 app.use('/kakao', express.json())
 app.post('/kakao',(req,res)=>{
@@ -48,6 +50,18 @@ app.use('/naver', express.json())
 app.post('/naver',(req,res)=>{
     console.log(req.body)
 });
+
+//await/async error핸들링용 warp함수
+const warp = function(fn) {
+    return async function(res, req, next) {
+        try{
+            await fn(res, req, next)
+        }
+        catch(err){
+            next(err)
+        }
+    }
+}
 
 //-------------------------------------------------
 //테스트용 입력
@@ -122,8 +136,35 @@ app.listen(port, function () {
 })
 
 //날씨 응답
+app.use('/weather/dailyWeather', express.json())
+app.use('/weather/dailyWeather', express.urlencoded({extended : true}))
 app.post('/weather/dailyWeather', function (req, res) {
-    res.sendFile(__dirname + '/dailyWeather.json')
+
+    let location = req.body.location
+    let data = []
+
+    let jsonFileData = fs.readFileSync('./Project_Crawler/dailyWeather.json')
+    let jsonData = JSON.parse(jsonFileData)
+
+    location = location.replaceAll(' ','')
+
+    for(let i=0;i<jsonData.length;i++)
+    {
+        if(location == jsonData[i].location)
+        {
+            data.push(jsonData[i])
+        }
+    }
+
+    //console.log(data)
+    // data.push({"location":"서해북부앞바다","day":"26일(금)","weather":"비","time":"오후","windDir":"북서-북","windSpeed":"4~9","seaHeight":"0.5~1"})
+    // data.push({"location":"서해북부앞바다","day":"27일(토)","weather":"맑음","time":"오전","windDir":"북서-북","windSpeed":"5~9","seaHeight":"0.5~0.5"})
+    // data.push({"location":"서해북부앞바다","day":"27일(토)","weather":"맑음","time":"오후","windDir":"서-북서","windSpeed":"5~8","seaHeight":"0.5~1"})
+    // data.push({"location":"서해북부앞바다","day":"28일(일)","weather":"구름많음","time":"오전","windDir":"북-북동","windSpeed":"3~6","seaHeight":"0.5~0.5"})
+    // data.push({"location":"서해북부앞바다","day":"28일(일)","weather":"흐림","time":"오후","windDir":"서-북서","windSpeed":"2~4","seaHeight":"0.5~0.5"})
+
+    res.send(data)
+    //res.sendFile(__dirname + '/dailyWeather.json')
     console.log('send daily weather file')
 })
 
@@ -136,7 +177,7 @@ const upload = multer({ dest: 'uploads/' })
 const cpUpload = upload.fields([{ name: 'fish', maxCount: 1 }])
 
 //물고기 정보 수신 and 송신
-app.post('/matchFish/caculateData', cpUpload, async function (req, res) {
+app.post('/matchFish/caculateData', cpUpload, warp(async function (req, res) {
 
     console.log("receive image file data")
 
@@ -165,15 +206,17 @@ app.post('/matchFish/caculateData', cpUpload, async function (req, res) {
     let pythonDataLength = await runPythonLength(newPath)
     let pythonDataType = await runPythonType(newPath)
 
+    console.log("caculate Fish is done")
+
     let imageName = req.files['fish'][0].path + '.jpg'
     let length = parseFloat(pythonDataLength.height) > parseFloat(pythonDataLength.width) ? pythonDataLength.height : pythonDataLength.width
     let fishType = pythonDataType.type
 
     imageName = imageName.split('\\')[1]
 
-    // connetion.query('insert into catchFishData (user, fishType, fishLength, latitude, longitude, imagePath) values (?,?,?,?,?,?)', ['test', fishType, length, location.latitude, location.longitude, imageName], function(err, row, filed) {
-    //     if(err) console.log(err)
-    // })
+    connetion.query('insert into catchFishData (user, fishType, fishLength, latitude, longitude, imagePath) values (?,?,?,?,?,?)', ['test', fishType, length, location.latitude, location.longitude, imageName], function(err, row, filed) {
+        if(err) console.log(err)
+    })
 
     let sendData = {}
 
@@ -182,7 +225,8 @@ app.post('/matchFish/caculateData', cpUpload, async function (req, res) {
     sendData.imageData = new Buffer.from(data).toString("base64")
 
     res.send(sendData)
-})
+    console.log("send data")
+}))
 
 // rank전송용
 app.use('/rank/fish', express.json())
@@ -232,11 +276,10 @@ app.get('/map/fish', function (req, res) {
 app.use('/map/center', express.json())
 app.use('/map/center', express.urlencoded({ extended: true }))
 app.post('/map/center', async function (req, res) {
-    console.log('mapCenter')
-
+    
     let data = req.body
 
-    console.log(data.Ma + ' ' + data.La) 
+    console.log('map Center : ' + data.Ma + ' ' + data.La) 
 
     //get position data for database with data, get image Path list
 
@@ -248,20 +291,25 @@ app.post('/map/center', async function (req, res) {
     for(let i=0;i<selectData.length;i++){
         let packData = {}
 
-        //let filePath = __dirname + '/image' + i + '.jpg'
-        let filePath = __dirname + '/uploads/' + selectData[i].imagePath
-        let imageData = fs.readFileSync(filePath, function(err) {
-            if(err) throw err
-        })
-        
-        packData.latitude = selectData[i].latitude
-        packData.longitude = selectData[i].longitude
-        packData.fishType = selectData[i].fishType
-        packData.fishLength = selectData[i].fishLength
-        packData.image = new Buffer.from(imageData).toString("base64")
+        //if(parseFloat(selectData[i].latitude) )
+        if(caculateLocation(data.Ma, data.La, selectData[i].latitude, selectData[i].longitude)) {
 
-        sendData.push(packData)
+            //let filePath = __dirname + '/image' + i + '.jpg'
+            let filePath = __dirname + '/uploads/' + selectData[i].imagePath
+            let imageData = fs.readFileSync(filePath, function(err) {
+                if(err) throw err
+            })
+            
+            packData.latitude = selectData[i].latitude
+            packData.longitude = selectData[i].longitude
+            packData.fishType = selectData[i].fishType
+            packData.fishLength = selectData[i].fishLength
+            packData.image = new Buffer.from(imageData).toString("base64")
+
+            sendData.push(packData)
+        }
     }
 
     res.send(sendData)
+    console.log('send MapFishData')
 })
