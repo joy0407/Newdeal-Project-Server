@@ -42,7 +42,6 @@ connetion.connect()
 // social Test - kakao
 app.use('/kakao', express.json())
 app.post('/kakao',async (req,res)=>{
-    console.log(req.body.properties.thumnail_image)
     let selectUser = await connetion.query(`SELECT id FROM users WHERE id = ?`,[req.body.id])
     if (selectUser[0][0] === undefined){
        let connection = await mysql.createConnection({host: 'localhost',user: 'root',password: '',database: ''})
@@ -62,9 +61,24 @@ app.post('/kakao',async (req,res)=>{
     res.send(data)
 });
 app.use('/naver', express.json())
-app.post('/naver',(req,res)=>{
-    console.log(req.body)
-    res.send('naver!!')
+app.post('/naver',async (req,res)=>{
+    let selectUser = await connetion.query(`SELECT id FROM users WHERE id = ?`,[req.body.id])
+    if (selectUser[0][0] === undefined){
+       let connection = await mysql.createConnection({host: 'localhost',user: 'root',password: '',database: ''})
+       connection.connect()
+       
+       await connection.query(`INSERT INTO users(id, email, nickname, provider) VALUES (?,?,?,?)`,[req.body.id,req.body.email, req.body.nickname, 'naver'])
+       console.log('Hello! Naver new member')
+     }
+     else{
+       console.log('Kakao Naver success')
+    }
+    let data = {
+        id: req.body.id,
+        nickname: req.body.nickname,
+        thumbnail: req.body.profile_image
+    }
+    res.send(data)
 });
 //-----------------------------------------------------
 //프로젝트용 소스코드
