@@ -32,8 +32,8 @@ let options = {
     password:dbConfig.password,
     database:dbConfig.database
   }
-const connetion = await mysql.createConnection(options)
-
+const connection = await mysql.createConnection(options)
+connection.connect()
 // app.use(cors({
 //     origin :'http://localhost:8080'
 // }))
@@ -41,10 +41,10 @@ const connetion = await mysql.createConnection(options)
 // social login
 app.use('/kakao', express.json())
 app.post('/kakao',async (req,res)=>{
-    let selectUser = await connetion.query(`SELECT id FROM users WHERE id = ?`,[req.body.id])
+    let selectUser = await connection.query(`SELECT id FROM users WHERE id = ?`,[req.body.id])
     if (selectUser[0][0] === undefined){
-       let connection = await mysql.createConnection(options)
-       connection.connect()
+       //let connection = await mysql.createConnection(options)
+       //connection.connect()
        
        await connection.query(`INSERT INTO users(id, email, nickname,thumbnail, provider) VALUES (?,?,?,?,?)`,[req.body.id,req.body.kakao_account.email, req.body.properties.nickname, req.body.properties.thumbnail_image,'kakao'])
        console.log('Hello! Kakao new member')
@@ -61,10 +61,10 @@ app.post('/kakao',async (req,res)=>{
 });
 app.use('/naver', express.json())
 app.post('/naver',async (req,res)=>{
-    let selectUser = await connetion.query(`SELECT id FROM users WHERE id = ?`,[req.body.id])
+    let selectUser = await connection.query(`SELECT id FROM users WHERE id = ?`,[req.body.id])
     if (selectUser[0][0] === undefined){
-       let connection = await mysql.createConnection(options)
-       connection.connect()
+       //let connection = await mysql.createConnection(options)
+       //connection.connect()
        
        await connection.query(`INSERT INTO users(id, email, nickname,thumbnail, provider) VALUES (?,?,?,?,?)`,[req.body.id,req.body.email, req.body.nickname,req.body.profile_image, 'naver'])
        console.log('Hello! Naver new member')
@@ -195,7 +195,8 @@ app.post('/matchFish/caculateData', cpUpload, warp(async function (req, res) {
     let userName = req.body.id
 
     //폴더제거를 위한 코드, 윈도우기준으로 작성됨
-    imageName = imageName.split('\\')[1]
+    console.log(imageName)
+    imageName = imageName.split('/')[1]
 
     //물고기 등급판별을 위한 파이썬 코드
     let pythonDataGrade = await runPythonGrade(fishType, length)
@@ -204,7 +205,7 @@ app.post('/matchFish/caculateData', cpUpload, warp(async function (req, res) {
     //F등급은 놓아줘야할 등급이라 따로 저장하지않음
     if(pythonDataGrade != 'F')
     {
-        connetion.query('insert into catchFishData (user, fishType, fishLength, latitude, longitude, imagePath, grade) values (?,?,?,?,?,?,?)', ['test', fishType, length, location.latitude, location.longitude, imageName, pythonDataGrade], function(err, row, filed) {
+        connection.query('insert into catchFishData (user, fishType, fishLength, latitude, longitude, imagePath, grade) values (?,?,?,?,?,?,?)', ['test', fishType, length, location.latitude, location.longitude, imageName, pythonDataGrade], function(err, row, filed) {
             if(err) console.log(err)
         })
         console.log("Insert Database is Done")
@@ -234,7 +235,7 @@ app.post('/rank/fish', async function (req, res) {
 
     //데이터베이스에서 전제 데이터 가져오기 (데이터가 적은갯수라 가능, 많으면 랭크 테이블 생성 필요)
     //let [selectData] = await connetion.query('select * from catchFishData where fishType=' + '\'' + req.body.fishType + '\'')
-    let [selectData] = await connetion.query('select * from catchFishData inner join users on catchFishData.user = users.id where catchFishData.fishType =' + '\'' + req.body.fishType + '\'')
+    let [selectData] = await connection.query('select * from catchFishData inner join users on catchFishData.user = users.id where catchFishData.fishType =' + '\'' + req.body.fishType + '\'')
 
     //데이터 정렬, 랭크테이블 생성하면 필요없을 수 있음
     selectData.sort(function(a, b){
@@ -246,7 +247,7 @@ app.post('/rank/fish', async function (req, res) {
     //전송할 데이터 배열로 입력
     for(let i=0;i<selectData.length;i++)
     {
-        data.push({'rank' : i+1, 'id' : selectData[i].user, 'thumbnail' : select[i].thumbnail, 'length' : parseInt(selectData[i].fishLength), 'grade' : selectData[i].grade})
+        data.push({'rank' : i+1, 'id' : selectData[i].user, 'thumbnail' : selectData[i].thumbnail, 'length' : parseInt(selectData[i].fishLength), 'grade' : selectData[i].grade})
     }
 
     res.send(data)
@@ -265,7 +266,7 @@ app.post('/map/center', async function (req, res) {
     console.log('map Center : ' + data.Ma + ' ' + data.La) 
 
     //데이터베이스에서 전체 데이터 조회
-    let [selectData] = await connetion.query('select * from catchFishData')
+    let [selectData] = await connection.query('select * from catchFishData')
 
     //전송할 데이터 선별
     let sendData= []

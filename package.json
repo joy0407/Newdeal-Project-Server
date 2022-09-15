@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/joy0407/Newdeal-Project-Server#readme",
   "dependencies": {
+    "@elastic/elasticsearch": "^8.4.0",
     "cors": "^2.8.5",
     "express": "^4.18.1",
     "jszip": "^3.10.1",
