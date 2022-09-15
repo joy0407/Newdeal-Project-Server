@@ -9,6 +9,7 @@ Original file is located at
 
 import pandas as pd
 import numpy as np
+import sys
 
 kr = range(25,46)
 kr = np.array(kr)
@@ -47,10 +48,26 @@ def get_rank(fish, size):
   if size >= df_fish.loc[[fish],['A']].values[0,0]:
     rank = 'S'
   if size < df_fish.loc[[fish],['F']].values[0,0]:
-    rank = print('포획금지 사이즈')
+    rank = 'F'
 
   return rank # S,A,B,C,D,E,'포획금지 사이즈' 7개 등급으로 나눔
 
+fishType = sys.argv[1]
+fishLength = sys.argv[2]
+
+indexList = ['감성돔','넙치','돌돔','조피볼락','참돔']
+
 감성돔,넙치,돌돔,조피볼락,참돔 = ['감성돔','넙치','돌돔','조피볼락','참돔']
 
-get_rank(넙치, 90) # (어종, 길이) 입력 시 등급 출력
+def getFishType(fishType) :
+  for i in indexList :
+    if fishType == i :
+      return i
+
+matchFishType = getFishType(fishType)
+matchFishLength = float(fishLength)
+
+data = get_rank(matchFishType, matchFishLength) # (어종, 길이) 입력 시 등급 출력
+
+utf8stdout = open(1, 'w', encoding='utf-8', closefd=False)
+print(data, file=utf8stdout)
