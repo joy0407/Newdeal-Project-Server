@@ -2,6 +2,7 @@ CREATE TABLE `users` (
   `id` varchar(100) NOT NULL,
   `email` varchar(20),
   `nickname` varchar(200) DEFAULT NULL,
+  `thumbnail` varchar(200)
   `provider` varchar(20),
   PRIMARY KEY (`id`)
 );

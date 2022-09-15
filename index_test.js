@@ -46,7 +46,7 @@ app.post('/kakao',async (req,res)=>{
        let connection = await mysql.createConnection({host: 'localhost',user: 'root',password: '',database: ''})
        connection.connect()
        
-       await connection.query(`INSERT INTO users(id, email, nickname, provider) VALUES (?,?,?,?)`,[req.body.id,req.body.kakao_account.email, req.body.properties.nickname, 'kakao'])
+       await connection.query(`INSERT INTO users(id, email, nickname,thumbnail, provider) VALUES (?,?,?,?)`,[req.body.id,req.body.kakao_account.email, req.body.properties.nickname, req.body.properties.thumbnail_image,'kakao'])
        console.log('Hello! Kakao new member')
      }
      else{
@@ -66,7 +66,7 @@ app.post('/naver',async (req,res)=>{
        let connection = await mysql.createConnection({host: 'localhost',user: 'root',password: '',database: ''})
        connection.connect()
        
-       await connection.query(`INSERT INTO users(id, email, nickname, provider) VALUES (?,?,?,?)`,[req.body.id,req.body.email, req.body.nickname, 'naver'])
+       await connection.query(`INSERT INTO users(id, email, nickname,thumbnail, provider) VALUES (?,?,?,?)`,[req.body.id,req.body.email, req.body.nickname,req.body.profile_image, 'naver'])
        console.log('Hello! Naver new member')
      }
      else{
