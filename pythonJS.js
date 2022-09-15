@@ -46,7 +46,7 @@ async function runPythonType(path) {
             else {
                 let data = result
 
-                returnData.type = data[2].split(':')[1]
+                returnData.type = data[1].split(':')[1]
 
                 return resolve(returnData)
             }
