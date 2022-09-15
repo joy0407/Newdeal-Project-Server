@@ -7,7 +7,8 @@ import cors from  "cors"
 import os from "os"
 import {runPythonLength, runPythonType, runPythonGrade} from "./pythonJS.js"
 import {caculateLocation} from "./functionJS.js"
-
+import dbConfig from "./config/db.config.js"
+import elsConfig from "./config/els.config.js"
 
 //module타입 코딩에서는 __dirname이 정의되어있지않음, 수동으로 직접 정의
 const __dirname = path.resolve()
@@ -29,27 +30,46 @@ app.use(cors({
 
 
 
-//Mysql 연결설정
-const connetion = await mysql.createConnection({
-    host : 'localhost',
-    user : 'root',
-    password : '0000',
-    database : 'test'
-})
-
-// connetion.connect()
-
-// social Test - kakao
+// social login
 app.use('/kakao', express.json())
-app.post('/kakao',(req,res)=>{
-    console.log(req.body)
-    console.log(req.body.properties)
-    res.send(req.body.properties.nickname)
+app.post('/kakao',async (req,res)=>{
+    let selectUser = await connetion.query(`SELECT id FROM users WHERE id = ?`,[req.body.id])
+    if (selectUser[0][0] === undefined){
+       let connection = await mysql.createConnection({host: 'localhost',user: 'root',password: '',database: ''})
+       connection.connect()
+       
+       await connection.query(`INSERT INTO users(id, email, nickname,thumbnail, provider) VALUES (?,?,?,?,?)`,[req.body.id,req.body.kakao_account.email, req.body.properties.nickname, req.body.properties.thumbnail_image,'kakao'])
+       console.log('Hello! Kakao new member')
+     }
+     else{
+       console.log('Kakao login success')
+    }
+    let data = {
+        id: req.body.id,
+        nickname: req.body.properties.nickname,
+        thumbnail: req.body.properties.thumbnail_image
+    }
+    res.send(data)
 });
-
 app.use('/naver', express.json())
-app.post('/naver',(req,res)=>{
-    console.log(req.body)
+app.post('/naver',async (req,res)=>{
+    let selectUser = await connetion.query(`SELECT id FROM users WHERE id = ?`,[req.body.id])
+    if (selectUser[0][0] === undefined){
+       let connection = await mysql.createConnection({host: 'localhost',user: 'root',password: '',database: ''})
+       connection.connect()
+       
+       await connection.query(`INSERT INTO users(id, email, nickname,thumbnail, provider) VALUES (?,?,?,?,?)`,[req.body.id,req.body.email, req.body.nickname,req.body.profile_image, 'naver'])
+       console.log('Hello! Naver new member')
+     }
+     else{
+       console.log('Kakao Naver success')
+    }
+    let data = {
+        id: req.body.id,
+        nickname: req.body.nickname,
+        thumbnail: req.body.profile_image
+    }
+    res.send(data)
 });
 
 //await&async error핸들링용 warp함수
@@ -71,7 +91,6 @@ app.get('/', function(req, res){
 
 //-----------------------------------------------------
 //프로젝트용 소스코드
-
 
 //express 서버 실행
 app.listen(port, function () {
@@ -268,3 +287,26 @@ app.post('/map/center', async function (req, res) {
     res.send(sendData)
     console.log('Send MapFishData')
 })
+
+// elasticsearch
+import els from '@elastic/elasticsearch';
+let cli = {
+    node:elsConfig.node,
+    auth:elsConfig.auth
+}
+const client = new els.Client(cli)
+
+app.get('/search', (req,res)=>{
+async function run() {
+                const result=await client.search({
+                    index: 'fish',
+                    query: {
+                        // localhost:3000/search?q=
+                        match: {"어종": req.query['q']}
+                    }
+                })
+            res.send(result.hits.hits)
+            console.log(result.hits.hits)
+        }
+    run().catch(console.log)
+});

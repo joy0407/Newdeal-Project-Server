@@ -6,6 +6,8 @@ import fs from "fs"
 import cors from  "cors"
 import {runPythonLength, runPythonType} from "./pythonJS.js"
 import {caculateLocation} from "./functionJS.js"
+import dbConfig from "./config/db.config.js"
+import elsConfig from "./config/els.config.js"
 
 
 //module타입 코딩에서는 __dirname이 정의되어있지않음, 수동으로 직접 정의
@@ -29,12 +31,14 @@ app.use(cors({
 
 
 //Mysql 연결설정
-const connetion = await mysql.createConnection({
-    host : 'localhost',
-    user : 'root',
-    password : '',
-    database : ''
-})
+let options = {
+    host:dbConfig.host,
+    port:dbConfig.port,
+    user:dbConfig.user,
+    password:dbConfig.password,
+    database:dbConfig.database
+  }
+const connetion = await mysql.createConnection(options)
 
 connetion.connect()
 
@@ -372,13 +376,11 @@ app.post('/map/center', async function (req, res) {
 
 // elasticsearch
 import els from '@elastic/elasticsearch';
-const client = new els.Client({
-    node: ['http://14.6.187.143:9200'],
-    auth: {
-      username: 'elastic',
-      password: 'Gjwjddbs0729'
-    }
-  })
+let cli = {
+    node:elsConfig.node,
+    auth:elsConfig.auth
+}
+const client = new els.Client(cli)
 
 app.get('/search', (req,res)=>{
 async function run() {
