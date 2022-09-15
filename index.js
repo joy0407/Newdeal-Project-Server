@@ -7,8 +7,8 @@ import cors from  "cors"
 import os from "os"
 import {runPythonLength, runPythonType, runPythonGrade} from "./pythonJS.js"
 import {caculateLocation} from "./functionJS.js"
-import dbConfig from "./config/db.config.js"
-import elsConfig from "./config/els.config.js"
+//import dbConfig from "./config/db.config.js"
+//import elsConfig from "./config/els.config.js"
 
 //module타입 코딩에서는 __dirname이 정의되어있지않음, 수동으로 직접 정의
 const __dirname = path.resolve()
@@ -19,24 +19,24 @@ const port = 3000
 
 // accesss allow url list (CORS : 통신 프로토콜이 서로 다를때 헤더에 담아 허가해줌) 
 // 다음 함수 실행으로 header 에 Access-Control-Allow-Origin:'https://nunutest.shop' 데이터를 서브해 줄 클라이언트
-app.use(cors({
-    origin: 'https://nunutest.shop',
-    credentials: true, 
-  }));
+// app.use(cors({
+//     origin: 'https://nunutest.shop',
+//     credentials: true, 
+//   }));
 
 //Mysql 연결설정
-let options = {
-    host:dbConfig.host,
-    port:dbConfig.port,
-    user:dbConfig.user,
-    password:dbConfig.password,
-    database:dbConfig.database
-  }
-const connection = await mysql.createConnection(options)
-connection.connect()
-// app.use(cors({
-//     origin :'http://localhost:8080'
-// }))
+// let options = {
+//     host:dbConfig.host,
+//     port:dbConfig.port,
+//     user:dbConfig.user,
+//     password:dbConfig.password,
+//     database:dbConfig.database
+//   }
+// const connection = await mysql.createConnection(options)
+// connection.connect()
+app.use(cors({
+    origin :'http://localhost:8080'
+}))
 
 // social login
 app.use('/kakao', express.json())
@@ -192,24 +192,26 @@ app.post('/matchFish/caculateData', cpUpload, warp(async function (req, res) {
     let imageName = req.files['fish'][0].path + '.jpg'
     let length = parseFloat(pythonDataLength.height) > parseFloat(pythonDataLength.width) ? pythonDataLength.height : pythonDataLength.width
     let fishType = pythonDataType.type
-    let userName = req.body.id
+    let userName = req.body.userId
 
-    //폴더제거를 위한 코드, 윈도우기준으로 작성됨
-    console.log(imageName)
-    imageName = imageName.split('/')[1]
+    //폴더제거를 위한 코드, os별 파일경로가 조금씩 다름
+    if(os.platform() == 'win32')
+        imageName = imageName.split('\\')[1]
+    else
+        imageName = imageName.split('/')[1]
 
     //물고기 등급판별을 위한 파이썬 코드
     let pythonDataGrade = await runPythonGrade(fishType, length)
     console.log('Fish Grade is : ', pythonDataGrade )
 
     //F등급은 놓아줘야할 등급이라 따로 저장하지않음
-    if(pythonDataGrade != 'F')
-    {
-        connection.query('insert into catchFishData (user, fishType, fishLength, latitude, longitude, imagePath, grade) values (?,?,?,?,?,?,?)', ['test', fishType, length, location.latitude, location.longitude, imageName, pythonDataGrade], function(err, row, filed) {
-            if(err) console.log(err)
-        })
-        console.log("Insert Database is Done")
-    }
+    // if(pythonDataGrade != 'F')
+    // {
+    //     connection.query('insert into catchFishData (user, fishType, fishLength, latitude, longitude, imagePath, grade) values (?,?,?,?,?,?,?)', [userName, fishType, length, location.latitude, location.longitude, imageName, pythonDataGrade], function(err, row, filed) {
+    //         if(err) console.log(err)
+    //     })
+    //     console.log("Insert Database is Done")
+    // }
 
 
     //최종연산된 결과물 전송
@@ -298,12 +300,12 @@ app.post('/map/center', async function (req, res) {
 })
 
 // elasticsearch
-import els from '@elastic/elasticsearch';
-let cli = {
-    node:elsConfig.node,
-    auth:elsConfig.auth
-}
-const client = new els.Client(cli)
+// import els from '@elastic/elasticsearch';
+// let cli = {
+//     node:elsConfig.node,
+//     auth:elsConfig.auth
+// }
+// const client = new els.Client(cli)
 
 app.get('/search', (req,res)=>{
 async function run() {
