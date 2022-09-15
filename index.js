@@ -14,28 +14,36 @@ import elsConfig from "./config/els.config.js"
 const __dirname = path.resolve()
 
 //express 초기화
-const app = express()
+const app = express();
 const port = 3000
 
 // accesss allow url list (CORS : 통신 프로토콜이 서로 다를때 헤더에 담아 허가해줌) 
 // 다음 함수 실행으로 header 에 Access-Control-Allow-Origin:'https://nunutest.shop' 데이터를 서브해 줄 클라이언트
-// app.use(cors({
-//     origin: 'https://nunutest.shop',
-//     credentials: true, 
-//   }));
-
 app.use(cors({
-    origin :'http://localhost:8080'
-}))
+    origin: 'https://nunutest.shop',
+    credentials: true, 
+  }));
 
+//Mysql 연결설정
+let options = {
+    host:dbConfig.host,
+    port:dbConfig.port,
+    user:dbConfig.user,
+    password:dbConfig.password,
+    database:dbConfig.database
+  }
+const connetion = await mysql.createConnection(options)
 
+// app.use(cors({
+//     origin :'http://localhost:8080'
+// }))
 
 // social login
 app.use('/kakao', express.json())
 app.post('/kakao',async (req,res)=>{
     let selectUser = await connetion.query(`SELECT id FROM users WHERE id = ?`,[req.body.id])
     if (selectUser[0][0] === undefined){
-       let connection = await mysql.createConnection({host: 'localhost',user: 'root',password: '',database: ''})
+       let connection = await mysql.createConnection(options)
        connection.connect()
        
        await connection.query(`INSERT INTO users(id, email, nickname,thumbnail, provider) VALUES (?,?,?,?,?)`,[req.body.id,req.body.kakao_account.email, req.body.properties.nickname, req.body.properties.thumbnail_image,'kakao'])
@@ -55,7 +63,7 @@ app.use('/naver', express.json())
 app.post('/naver',async (req,res)=>{
     let selectUser = await connetion.query(`SELECT id FROM users WHERE id = ?`,[req.body.id])
     if (selectUser[0][0] === undefined){
-       let connection = await mysql.createConnection({host: 'localhost',user: 'root',password: '',database: ''})
+       let connection = await mysql.createConnection(options)
        connection.connect()
        
        await connection.query(`INSERT INTO users(id, email, nickname,thumbnail, provider) VALUES (?,?,?,?,?)`,[req.body.id,req.body.email, req.body.nickname,req.body.profile_image, 'naver'])
