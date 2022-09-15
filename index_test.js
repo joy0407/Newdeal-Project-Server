@@ -38,7 +38,7 @@ const connetion = await mysql.createConnection({
 
 connetion.connect()
 
-// social Test - kakao
+// social login
 app.use('/kakao', express.json())
 app.post('/kakao',async (req,res)=>{
     let selectUser = await connetion.query(`SELECT id FROM users WHERE id = ?`,[req.body.id])
@@ -46,7 +46,7 @@ app.post('/kakao',async (req,res)=>{
        let connection = await mysql.createConnection({host: 'localhost',user: 'root',password: '',database: ''})
        connection.connect()
        
-       await connection.query(`INSERT INTO users(id, email, nickname,thumbnail, provider) VALUES (?,?,?,?)`,[req.body.id,req.body.kakao_account.email, req.body.properties.nickname, req.body.properties.thumbnail_image,'kakao'])
+       await connection.query(`INSERT INTO users(id, email, nickname,thumbnail, provider) VALUES (?,?,?,?,?)`,[req.body.id,req.body.kakao_account.email, req.body.properties.nickname, req.body.properties.thumbnail_image,'kakao'])
        console.log('Hello! Kakao new member')
      }
      else{
@@ -66,7 +66,7 @@ app.post('/naver',async (req,res)=>{
        let connection = await mysql.createConnection({host: 'localhost',user: 'root',password: '',database: ''})
        connection.connect()
        
-       await connection.query(`INSERT INTO users(id, email, nickname,thumbnail, provider) VALUES (?,?,?,?)`,[req.body.id,req.body.email, req.body.nickname,req.body.profile_image, 'naver'])
+       await connection.query(`INSERT INTO users(id, email, nickname,thumbnail, provider) VALUES (?,?,?,?,?)`,[req.body.id,req.body.email, req.body.nickname,req.body.profile_image, 'naver'])
        console.log('Hello! Naver new member')
      }
      else{
@@ -368,4 +368,29 @@ app.post('/map/center', async function (req, res) {
 
     res.send(sendData)
     console.log('send MapFishData')
+})
+
+// elasticsearch
+import els from '@elastic/elasticsearch';
+const client = new els.Client({
+    node: ['http://14.6.187.143:9200'],
+    auth: {
+      username: 'elastic',
+      password: 'Gjwjddbs0729'
+    }
+  })
+
+app.get('/search', (req,res)=>{
+async function run() {
+                const result=await client.search({
+                    index: 'fish',
+                    query: {
+                        // localhost:3000/search?q=
+                        match: {"어종": req.query['q']}
+                    }
+                })
+            res.send(result.hits.hits)
+            console.log(result.hits.hits)
+        }
+    run().catch(console.log)
 })
