@@ -240,45 +240,45 @@ app.post('/rank/fish', function (req, res) {
 
     if(req.body.fishType == '참돔')
     {
-        data.push({ 'rank': 1, 'id': 'test1', 'length': 15, 'grade' : 'A' })
-        data.push({ 'rank': 2, 'id': 'test2', 'length': 14, 'grade' : 'B' })
-        data.push({ 'rank': 3, 'id': 'test3', 'length': 12, 'grade' : 'D' })
-        data.push({ 'rank': 4, 'id': 'test4', 'length': 10, 'grade' : 'E' })
+        data.push({ 'rank': 1, 'thumbnail': 'http://k.kakaocdn.net/dn/UszZG/btrIwHjbElA/M7yq5NODhTHnQBYNXDo6TK/img_110x110.jpg', 'id': 'sol', 'length': 15, 'grade' : 'A' })
+        data.push({ 'rank': 2, 'thumbnail': 'https://phinf.pstatic.net/contact/20210909_185/1631194079809JVxB2_JPEG/KakaoTalk_20200727_123406631.jpg', 'id': '정유니', 'length': 14, 'grade' : 'B' })
+        data.push({ 'rank': 3, 'thumbnail': null, 'id': 'test3', 'length': 12, 'grade' : 'D' })
+        data.push({ 'rank': 4, 'thumbnail': 'https://ssl.pstatic.net/static/pwe/address/img_profile.png', 'id': 'test4', 'length': 10, 'grade' : 'E' })
     }
     else if(req.body.fishType == '돌돔')
     {
-        data.push({ 'rank': 21, 'id': 'test1', 'length': 51, 'grade' : 'A' })
-        data.push({ 'rank': 31, 'id': 'test2', 'length': 41, 'grade' : 'B' })
-        data.push({ 'rank': 41, 'id': 'test3', 'length': 21, 'grade' : 'C' })
-        data.push({ 'rank': 51, 'id': 'test4', 'length': 15, 'grade' : 'F' })
+        data.push({ 'rank': 1, 'thumbnail': 'http://k.kakaocdn.net/dn/UszZG/btrIwHjbElA/M7yq5NODhTHnQBYNXDo6TK/img_110x110.jpg', 'id': 'sol', 'length': 15, 'grade' : 'A' })
+        data.push({ 'rank': 2, 'thumbnail': 'https://phinf.pstatic.net/contact/20210909_185/1631194079809JVxB2_JPEG/KakaoTalk_20200727_123406631.jpg', 'id': '정유니', 'length': 14, 'grade' : 'B' })
+        data.push({ 'rank': 3, 'thumbnail': null, 'id': 'test3', 'length': 12, 'grade' : 'D' })
+        data.push({ 'rank': 4, 'thumbnail': 'https://ssl.pstatic.net/static/pwe/address/img_profile.png', 'id': 'test4', 'length': 10, 'grade' : 'E' })
     }
     else if(req.body.fishType == '감성돔')
     {
-        data.push({ 'rank': 15, 'id': 'test1', 'length': 33, 'grade' : 'A' })
-        data.push({ 'rank': 17, 'id': 'test2', 'length': 31, 'grade' : 'B' })
-        data.push({ 'rank': 19, 'id': 'test3', 'length': 29, 'grade' : 'C' })
-        data.push({ 'rank': 21, 'id': 'test4', 'length': 27, 'grade' : 'D' })
+        data.push({ 'rank': 1, 'thumbnail': 'http://k.kakaocdn.net/dn/UszZG/btrIwHjbElA/M7yq5NODhTHnQBYNXDo6TK/img_110x110.jpg', 'id': 'sol', 'length': 15, 'grade' : 'A' })
+        data.push({ 'rank': 2, 'thumbnail': 'https://phinf.pstatic.net/contact/20210909_185/1631194079809JVxB2_JPEG/KakaoTalk_20200727_123406631.jpg', 'id': '정유니', 'length': 14, 'grade' : 'B' })
+        data.push({ 'rank': 3, 'thumbnail': null, 'id': 'test3', 'length': 12, 'grade' : 'D' })
+        data.push({ 'rank': 4, 'thumbnail': 'https://ssl.pstatic.net/static/pwe/address/img_profile.png', 'id': 'test4', 'length': 10, 'grade' : 'E' })
     }
     else if(req.body.fishType == '조피볼락')
     {
-        data.push({ 'rank': 10, 'id': 'test1', 'length': 22, 'grade' : 'A' })
-        data.push({ 'rank': 11, 'id': 'test2', 'length': 21, 'grade' : 'A' })
-        data.push({ 'rank': 12, 'id': 'test3', 'length': 20, 'grade' : 'A' })
-        data.push({ 'rank': 13, 'id': 'test4', 'length': 18, 'grade' : 'B' })
+        data.push({ 'rank': 1, 'thumbnail': 'http://k.kakaocdn.net/dn/UszZG/btrIwHjbElA/M7yq5NODhTHnQBYNXDo6TK/img_110x110.jpg', 'id': 'sol', 'length': 15, 'grade' : 'A' })
+        data.push({ 'rank': 2, 'thumbnail': 'https://phinf.pstatic.net/contact/20210909_185/1631194079809JVxB2_JPEG/KakaoTalk_20200727_123406631.jpg', 'id': '정유니', 'length': 14, 'grade' : 'B' })
+        data.push({ 'rank': 3, 'thumbnail': null, 'id': 'test3', 'length': 12, 'grade' : 'D' })
+        data.push({ 'rank': 4, 'thumbnail': 'https://ssl.pstatic.net/static/pwe/address/img_profile.png', 'id': 'test4', 'length': 10, 'grade' : 'E' })
     }
     else if(req.body.fishType == '넙치')
     {
-        data.push({ 'rank': 31, 'id': 'test1', 'length': 29, 'grade' : 'A' })
-        data.push({ 'rank': 33, 'id': 'test2', 'length': 26, 'grade' : 'C' })
-        data.push({ 'rank': 36, 'id': 'test3', 'length': 22, 'grade' : 'E' })
-        data.push({ 'rank': 38, 'id': 'test4', 'length': 15, 'grade' : 'F' })
+        data.push({ 'rank': 1, 'thumbnail': 'http://k.kakaocdn.net/dn/UszZG/btrIwHjbElA/M7yq5NODhTHnQBYNXDo6TK/img_110x110.jpg', 'id': 'sol', 'length': 15, 'grade' : 'A' })
+        data.push({ 'rank': 2, 'thumbnail': 'https://phinf.pstatic.net/contact/20210909_185/1631194079809JVxB2_JPEG/KakaoTalk_20200727_123406631.jpg', 'id': '정유니', 'length': 14, 'grade' : 'B' })
+        data.push({ 'rank': 3, 'thumbnail': null, 'id': 'test3', 'length': 12, 'grade' : 'D' })
+        data.push({ 'rank': 4, 'thumbnail': 'https://ssl.pstatic.net/static/pwe/address/img_profile.png', 'id': 'test4', 'length': 10, 'grade' : 'E' })
     }
     else
     {
-        data.push({ 'rank': 1, 'id': 'err1', 'length': 15, 'grade' : 'A' })
-        data.push({ 'rank': 2, 'id': 'err2', 'length': 14, 'grade' : 'B' })
-        data.push({ 'rank': 3, 'id': 'err3', 'length': 12, 'grade' : 'D' })
-        data.push({ 'rank': 4, 'id': 'err4', 'length': 10, 'grade' : 'E' })
+        data.push({ 'rank': 1, 'thumbnail': 'http://k.kakaocdn.net/dn/UszZG/btrIwHjbElA/M7yq5NODhTHnQBYNXDo6TK/img_110x110.jpg', 'id': 'sol', 'length': 15, 'grade' : 'A' })
+        data.push({ 'rank': 2, 'thumbnail': 'https://phinf.pstatic.net/contact/20210909_185/1631194079809JVxB2_JPEG/KakaoTalk_20200727_123406631.jpg', 'id': '정유니', 'length': 14, 'grade' : 'B' })
+        data.push({ 'rank': 3, 'thumbnail': null, 'id': 'test3', 'length': 12, 'grade' : 'D' })
+        data.push({ 'rank': 4, 'thumbnail': 'https://ssl.pstatic.net/static/pwe/address/img_profile.png', 'id': 'test4', 'length': 10, 'grade' : 'E' })
     }
 
 
