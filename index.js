@@ -118,6 +118,7 @@ app.post('/weather/dailyWeather', function (req, res) {
     let data = []
 
     //미리 크롤링해둔 Json파일 읽어오기, Json형태로 사용할수 있도록 파싱
+    //let jsonFileData = fs.readFileSync('./dailyWeather.json')
     let jsonFileData = fs.readFileSync('./Project_Crawler/dailyWeather.json')
     let jsonData = JSON.parse(jsonFileData)
 
