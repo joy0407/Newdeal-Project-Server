@@ -34,6 +34,9 @@ path = sys.argv[1]
 
 #path = '/content/drive/MyDrive/test이미지2/testimage.jpg'
 image_bgr = cv2.imread(path) # 이미지 불러오기
+if image_bgr.shape[0]*image_bgr.shape[1] > 10000000:
+    image_bgr = cv2.resize(image_bgr, dsize=(0,0), fx=0.25, fy=0.25, interpolation=cv2.INTER_LINEAR)
+
 image_rgb = cv2.cvtColor(image_bgr, cv2.COLOR_BGR2RGB) # 이미지 색 배열을 bgr에서 rgb로 변환
 
 rectangle = (1, 1, image_rgb.shape[1]-1, image_rgb.shape[0]-1) # 객체 판별 범위 지정
