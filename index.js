@@ -240,6 +240,8 @@ app.post('/rank/fish', async function (req, res) {
     //let [selectData] = await connetion.query('select * from catchFishData where fishType=' + '\'' + req.body.fishType + '\'')
     let [selectData] = await connection.query('select * from catchFishData inner join users on catchFishData.user = users.id where catchFishData.fishType =' + '\'' + req.body.fishType + '\'')
 
+    console.log(selectData)
+
     //데이터 정렬, 랭크테이블 생성하면 필요없을 수 있음
     selectData.sort(function(a, b){
         if(a.fishLength > b.fishLength) return -1
