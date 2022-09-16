@@ -84,7 +84,7 @@ cnts = cv2.findContours(edged, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE) # 윤
 cnts = imutils.grab_contours(cnts) # 윤곽선 총갯수 구하기
 #print("Total number of contours are: ", len(cnts))
 
-(cnts, _) = contours.sort_contours(cnts, ) # 왼쪽에서 오른쪽으로 셀 정렬 ,method='left-to-right'
+(cnts,_) = contours.sort_contours(cnts, ) # 왼쪽에서 오른쪽으로 셀 정렬 ,method='left-to-right'
 pixelPerMetric = None # 1픽셀 대비 cm값을 구하는 함수
 def midpoint(ptA, ptB):
     return ((ptA[0] + ptB[0]) * 0.5, (ptA[1] + ptB[1]) * 0.5) # 직선의 가운데 위치를 찾는 함수
@@ -152,7 +152,7 @@ for c in cnts:
 
     plt.imshow(orig)
     plt.axis('off')
-    #plt.show() # 화면 출력
+    # plt.show() # 화면 출력
     
 utf8stdout = open(1, 'w', encoding='utf-8', closefd=False)
 print("측정길이:","{:.1f}cm".format(dimA), file=utf8stdout) 

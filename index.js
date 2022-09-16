@@ -20,7 +20,7 @@ const port = 3000
 // accesss allow url list (CORS : 통신 프로토콜이 서로 다를때 헤더에 담아 허가해줌) 
 // 다음 함수 실행으로 header 에 Access-Control-Allow-Origin:'https://nunutest.shop' 데이터를 서브해 줄 클라이언트
 app.use(cors({
-    origin: 'https://nunutest.shop',
+	origin: 'https://nunutest.shop',
     credentials: true, 
   }));
 
@@ -70,7 +70,7 @@ app.post('/naver',async (req,res)=>{
        console.log('Hello! Naver new member')
      }
      else{
-       console.log('Kakao Naver success')
+       console.log('Naver login success')
     }
     let data = {
         id: req.body.id,
@@ -328,7 +328,7 @@ async function run() {
                     }
                 })
             res.send(result.hits.hits)
-            console.log(result.hits.hits)
+            console.log('elastic searching!')
         }
     run().catch(console.log)
 });

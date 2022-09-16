@@ -3,8 +3,8 @@
 //판별은 현재 사각형을 기준으로 판별
 //현재 기준은 1.0
 function caculateLocation(centerLatitude, centerLongitude, currentLatitude, currentLongitude) {
-    if(Math.abs(parseFloat(centerLatitude) - parseFloat(currentLatitude)) < parseFloat(1.0) &&
-        Math.abs(parseFloat(centerLongitude) - parseFloat(currentLongitude)) < parseFloat(1.0))
+    if(Math.abs(parseFloat(centerLatitude) - parseFloat(currentLatitude)) < parseFloat(0.5) &&
+        Math.abs(parseFloat(centerLongitude) - parseFloat(currentLongitude)) < parseFloat(0.5))
         return true
     else
         return false
