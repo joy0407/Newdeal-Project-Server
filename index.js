@@ -195,6 +195,10 @@ app.post('/matchFish/caculateData', cpUpload, warp(async function (req, res) {
     let fishType = pythonDataType.type
     let userName = req.body.userId
 
+    console.log(fishType)
+    console.log(fishType.length)
+
+
     //폴더제거를 위한 코드, os별 파일경로가 조금씩 다름
     if(os.platform() == 'win32')
         imageName = imageName.split('\\')[1]
