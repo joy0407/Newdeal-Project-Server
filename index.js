@@ -250,7 +250,7 @@ app.post('/rank/fish', async function (req, res) {
     //전송할 데이터 배열로 입력
     for(let i=0;i<selectData.length;i++)
     {
-        data.push({'rank' : i+1, 'id' : selectData[i].user, 'thumbnail' : selectData[i].thumbnail, 'length' : parseInt(selectData[i].fishLength), 'grade' : selectData[i].grade})
+        data.push({'rank' : i+1, 'id' : selectData[i].nickname, 'thumbnail' : selectData[i].thumbnail, 'length' : parseInt(selectData[i].fishLength), 'grade' : selectData[i].grade})
     }
 
     res.send(data)
