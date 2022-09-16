@@ -250,6 +250,10 @@ app.post('/rank/fish', async function (req, res) {
     //전송할 데이터 배열로 입력
     for(let i=0;i<selectData.length;i++)
     {
+        //id가 geust인 경우 닉네임이 존재하지않으므로 geust로 닉네임설정
+        if(selectData[i].id = 'geust')
+            selectData[i].nickname = 'Geust'
+        S
         data.push({'rank' : i+1, 'id' : selectData[i].nickname, 'thumbnail' : selectData[i].thumbnail, 'length' : parseInt(selectData[i].fishLength), 'grade' : selectData[i].grade})
     }
 
