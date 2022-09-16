@@ -1,1 +1,2972 @@
-[{"location":"서해북부앞바다","day":"29일(월)","weather":"비","time":"오전","windDir":"북동-동","windSpeed":"3~5","seaHeight":"0.5~0.5"},{"location":"서해북부앞바다","day":"29일(월)","weather":"비","time":"오후","windDir":"남동-남","windSpeed":"3~6","seaHeight":"0.5~0.5"},{"location":"서해북부앞바다","day":"30일(화)","weather":"비","time":"오전","windDir":"동-남동","windSpeed":"3~6","seaHeight":"0.5~1"},{"location":"서해북부앞바다","day":"30일(화)","weather":"비","time":"오후","windDir":"동-남동","windSpeed":"4~7","seaHeight":"0.5~1"},{"location":"서해북부앞바다","day":"31일(수)","weather":"구름많음","time":"오전","windDir":"북-북동","windSpeed":"3~6","seaHeight":"0.5~0.5"},{"location":"서해북부앞바다","day":"31일(수)","weather":"맑음","time":"오후","windDir":"북서-북","windSpeed":"3~6","seaHeight":"0.5~0.5"},{"location":"서해북부먼바다","day":"29일(월)","weather":"비","time":"오전","windDir":"북동-동","windSpeed":"4~7","seaHeight":"0.5~1"},{"location":"서해북부먼바다","day":"29일(월)","weather":"비","time":"오후","windDir":"남동-남","windSpeed":"4~7","seaHeight":"0.5~1"},{"location":"서해북부먼바다","day":"30일(화)","weather":"비","time":"오전","windDir":"동-남동","windSpeed":"4~9","seaHeight":"0.5~1.5"},{"location":"서해북부먼바다","day":"30일(화)","weather":"구름많음","time":"오후","windDir":"북동-동","windSpeed":"5~9","seaHeight":"0.5~1.5"},{"location":"서해북부먼바다","day":"31일(수)","weather":"구름많음","time":"오전","windDir":"북-북동","windSpeed":"4~7","seaHeight":"0.5~1"},{"location":"서해북부먼바다","day":"31일(수)","weather":"맑음","time":"오후","windDir":"북서-북","windSpeed":"4~7","seaHeight":"0.5~1"},{"location":"서해중부앞바다","day":"29일(월)","weather":"비","time":"오전","windDir":"동-남동","windSpeed":"3~6","seaHeight":"0.5~1"},{"location":"서해중부앞바다","day":"29일(월)","weather":"비","time":"오후","windDir":"동-남동","windSpeed":"4~7","seaHeight":"0.5~1"},{"location":"서해중부앞바다","day":"30일(화)","weather":"비","time":"오전","windDir":"동-남동","windSpeed":"5~9","seaHeight":"0.5~1.5"},{"location":"서해중부앞바다","day":"30일(화)","weather":"비","time":"오후","windDir":"북동-동","windSpeed":"6~11","seaHeight":"0.5~1.5"},{"location":"서해중부앞바다","day":"31일(수)","weather":"비","time":"오전","windDir":"북-북동","windSpeed":"5~11","seaHeight":"0.5~1.5"},{"location":"서해중부앞바다","day":"31일(수)","weather":"구름많음","time":"오후","windDir":"북서-북","windSpeed":"3~9","seaHeight":"0.5~1"},{"location":"서해중부바깥먼바다","day":"29일(월)","weather":"비","time":"오전","windDir":"남동-남","windSpeed":"4~9","seaHeight":"0.5~1.5"},{"location":"서해중부바깥먼바다","day":"29일(월)","weather":"비","time":"오후","windDir":"동-남동","windSpeed":"5~9","seaHeight":"0.5~1.5"},{"location":"서해중부바깥먼바다","day":"30일(화)","weather":"비","time":"오전","windDir":"북동-동","windSpeed":"6~11","seaHeight":"1~2"},{"location":"서해중부바깥먼바다","day":"30일(화)","weather":"비","time":"오후","windDir":"북동-동","windSpeed":"7~12","seaHeight":"1~2"},{"location":"서해중부바깥먼바다","day":"31일(수)","weather":"구름많음","time":"오전","windDir":"북-북동","windSpeed":"7~12","seaHeight":"1~2"},{"location":"서해중부바깥먼바다","day":"31일(수)","weather":"맑음","time":"오후","windDir":"북서-북","windSpeed":"7~12","seaHeight":"0.5~1.5"},{"location":"서해중부안쪽먼바다","day":"29일(월)","weather":"비","time":"오전","windDir":"북동-동","windSpeed":"3~7","seaHeight":"0.5~1.5"},{"location":"서해중부안쪽먼바다","day":"29일(월)","weather":"비","time":"오후","windDir":"남동-남","windSpeed":"5~9","seaHeight":"0.5~1.5"},{"location":"서해중부안쪽먼바다","day":"30일(화)","weather":"비","time":"오전","windDir":"동-남동","windSpeed":"6~11","seaHeight":"1~2"},{"location":"서해중부안쪽먼바다","day":"30일(화)","weather":"비","time":"오후","windDir":"북동-동","windSpeed":"7~12","seaHeight":"1~2"},{"location":"서해중부안쪽먼바다","day":"31일(수)","weather":"구름많음","time":"오전","windDir":"북-북동","windSpeed":"8~12","seaHeight":"1~2"},{"location":"서해중부안쪽먼바다","day":"31일(수)","weather":"맑음","time":"오후","windDir":"북서-북","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"인천,경기북부앞바다","day":"29일(월)","weather":"비","time":"오전","windDir":"동-남동","windSpeed":"3~6","seaHeight":"0.5~1"},{"location":"인천,경기북부앞바다","day":"29일(월)","weather":"비","time":"오후","windDir":"남동-남","windSpeed":"4~7","seaHeight":"0.5~1"},{"location":"인천,경기북부앞바다","day":"30일(화)","weather":"비","time":"오전","windDir":"북동-동","windSpeed":"5~9","seaHeight":"0.5~1"},{"location":"인천,경기북부앞바다","day":"30일(화)","weather":"비","time":"오후","windDir":"북동-동","windSpeed":"6~11","seaHeight":"0.5~1"},{"location":"인천,경기북부앞바다","day":"31일(수)","weather":"구름많음","time":"오전","windDir":"북-북동","windSpeed":"5~9","seaHeight":"0.5~1"},{"location":"인천,경기북부앞바다","day":"31일(수)","weather":"구름많음","time":"오후","windDir":"북서-북","windSpeed":"3~7","seaHeight":"0.5~0.5"},{"location":"인천,경기남부앞바다","day":"29일(월)","weather":"비","time":"오전","windDir":"남동-남","windSpeed":"3~6","seaHeight":"0.5~1"},{"location":"인천,경기남부앞바다","day":"29일(월)","weather":"비","time":"오후","windDir":"동-남동","windSpeed":"4~7","seaHeight":"0.5~1"},{"location":"인천,경기남부앞바다","day":"30일(화)","weather":"비","time":"오전","windDir":"동-남동","windSpeed":"5~10","seaHeight":"0.5~1.5"},{"location":"인천,경기남부앞바다","day":"30일(화)","weather":"비","time":"오후","windDir":"북동-동","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"인천,경기남부앞바다","day":"31일(수)","weather":"비","time":"오전","windDir":"북서-북","windSpeed":"6~10","seaHeight":"0.5~1.5"},{"location":"인천,경기남부앞바다","day":"31일(수)","weather":"구름많음","time":"오후","windDir":"북서-북","windSpeed":"3~7","seaHeight":"0.5~1"},{"location":"충남북부앞바다","day":"29일(월)","weather":"비","time":"오전","windDir":"동-남동","windSpeed":"3~6","seaHeight":"0.5~0.5"},{"location":"충남북부앞바다","day":"29일(월)","weather":"비","time":"오후","windDir":"동-남동","windSpeed":"4~7","seaHeight":"0.5~0.5"},{"location":"충남북부앞바다","day":"30일(화)","weather":"비","time":"오전","windDir":"동-남동","windSpeed":"5~9","seaHeight":"0.5~1"},{"location":"충남북부앞바다","day":"30일(화)","weather":"비","time":"오후","windDir":"북동-동","windSpeed":"6~11","seaHeight":"0.5~1.5"},{"location":"충남북부앞바다","day":"31일(수)","weather":"흐림","time":"오전","windDir":"북-북동","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"충남북부앞바다","day":"31일(수)","weather":"흐림","time":"오후","windDir":"북동-동","windSpeed":"5~9","seaHeight":"0.5~1"},{"location":"충남남부앞바다","day":"29일(월)","weather":"비","time":"오전","windDir":"동-남동","windSpeed":"3~6","seaHeight":"0.5~0.5"},{"location":"충남남부앞바다","day":"29일(월)","weather":"비","time":"오후","windDir":"동-남동","windSpeed":"4~7","seaHeight":"0.5~0.5"},{"location":"충남남부앞바다","day":"30일(화)","weather":"비","time":"오전","windDir":"동-남동","windSpeed":"5~9","seaHeight":"0.5~1"},{"location":"충남남부앞바다","day":"30일(화)","weather":"비","time":"오후","windDir":"북동-동","windSpeed":"6~11","seaHeight":"0.5~1.5"},{"location":"충남남부앞바다","day":"31일(수)","weather":"비","time":"오전","windDir":"북-북동","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"충남남부앞바다","day":"31일(수)","weather":"흐림","time":"오후","windDir":"북동-동","windSpeed":"5~9","seaHeight":"0.5~1"},{"location":"서해남부북쪽바깥먼바다","day":"29일(월)","weather":"비","time":"오전","windDir":"동-남동","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"서해남부북쪽바깥먼바다","day":"29일(월)","weather":"비","time":"오후","windDir":"동-남동","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"서해남부북쪽바깥먼바다","day":"30일(화)","weather":"비","time":"오전","windDir":"동-남동","windSpeed":"9~13","seaHeight":"1.5~2.5"},{"location":"서해남부북쪽바깥먼바다","day":"30일(화)","weather":"비","time":"오후","windDir":"북동-동","windSpeed":"9~13","seaHeight":"1.5~2.5"},{"location":"서해남부북쪽바깥먼바다","day":"31일(수)","weather":"비","time":"오전","windDir":"북-북동","windSpeed":"9~13","seaHeight":"1.5~2.5"},{"location":"서해남부북쪽바깥먼바다","day":"31일(수)","weather":"구름많음","time":"오후","windDir":"북-북동","windSpeed":"8~12","seaHeight":"1~2"},{"location":"서해남부북쪽안쪽먼바다","day":"29일(월)","weather":"비","time":"오전","windDir":"동-남동","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"서해남부북쪽안쪽먼바다","day":"29일(월)","weather":"비","time":"오후","windDir":"동-남동","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"서해남부북쪽안쪽먼바다","day":"30일(화)","weather":"비","time":"오전","windDir":"동-남동","windSpeed":"8~12","seaHeight":"1~2"},{"location":"서해남부북쪽안쪽먼바다","day":"30일(화)","weather":"비","time":"오후","windDir":"북동-동","windSpeed":"9~13","seaHeight":"1.5~2.5"},{"location":"서해남부북쪽안쪽먼바다","day":"31일(수)","weather":"비","time":"오전","windDir":"북-북동","windSpeed":"9~13","seaHeight":"1.5~2.5"},{"location":"서해남부북쪽안쪽먼바다","day":"31일(수)","weather":"흐림","time":"오후","windDir":"북-북동","windSpeed":"8~12","seaHeight":"1~2"},{"location":"서해남부앞바다","day":"29일(월)","weather":"비","time":"오전","windDir":"동-남동","windSpeed":"5~8","seaHeight":"0.5~0.5"},{"location":"서해남부앞바다","day":"29일(월)","weather":"비","time":"오후","windDir":"동-남동","windSpeed":"6~9","seaHeight":"0.5~1"},{"location":"서해남부앞바다","day":"30일(화)","weather":"비","time":"오전","windDir":"동-남동","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"서해남부앞바다","day":"30일(화)","weather":"비","time":"오후","windDir":"북동-동","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"서해남부앞바다","day":"31일(수)","weather":"비","time":"오전","windDir":"북-북동","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"서해남부앞바다","day":"31일(수)","weather":"흐림","time":"오후","windDir":"북-북동","windSpeed":"6~9","seaHeight":"0.5~1"},{"location":"서해남부남쪽바깥먼바다","day":"29일(월)","weather":"비","time":"오전","windDir":"동-남동","windSpeed":"5~8","seaHeight":"0.5~0.5"},{"location":"서해남부남쪽바깥먼바다","day":"29일(월)","weather":"비","time":"오후","windDir":"동-남동","windSpeed":"6~9","seaHeight":"0.5~1"},{"location":"서해남부남쪽바깥먼바다","day":"30일(화)","weather":"비","time":"오전","windDir":"동-남동","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"서해남부남쪽바깥먼바다","day":"30일(화)","weather":"비","time":"오후","windDir":"북동-동","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"서해남부남쪽바깥먼바다","day":"31일(수)","weather":"비","time":"오전","windDir":"북-북동","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"서해남부남쪽바깥먼바다","day":"31일(수)","weather":"흐림","time":"오후","windDir":"북-북동","windSpeed":"6~9","seaHeight":"0.5~1"},{"location":"서해남부남쪽안쪽먼바다","day":"29일(월)","weather":"비","time":"오전","windDir":"동-남동","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"서해남부남쪽안쪽먼바다","day":"29일(월)","weather":"비","time":"오후","windDir":"동-남동","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"서해남부남쪽안쪽먼바다","day":"30일(화)","weather":"비","time":"오전","windDir":"동-남동","windSpeed":"8~12","seaHeight":"1~2"},{"location":"서해남부남쪽안쪽먼바다","day":"30일(화)","weather":"비","time":"오후","windDir":"북동-동","windSpeed":"9~13","seaHeight":"1.5~2.5"},{"location":"서해남부남쪽안쪽먼바다","day":"31일(수)","weather":"비","time":"오전","windDir":"북-북동","windSpeed":"9~13","seaHeight":"1.5~2.5"},{"location":"서해남부남쪽안쪽먼바다","day":"31일(수)","weather":"흐림","time":"오후","windDir":"북-북동","windSpeed":"8~12","seaHeight":"1~2"},{"location":"전북북부앞바다","day":"29일(월)","weather":"비","time":"오전","windDir":"동-남동","windSpeed":"5~8","seaHeight":"0.5~0.5"},{"location":"전북북부앞바다","day":"29일(월)","weather":"비","time":"오후","windDir":"동-남동","windSpeed":"6~9","seaHeight":"0.5~1"},{"location":"전북북부앞바다","day":"30일(화)","weather":"비","time":"오전","windDir":"동-남동","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"전북북부앞바다","day":"30일(화)","weather":"비","time":"오후","windDir":"북동-동","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"전북북부앞바다","day":"31일(수)","weather":"비","time":"오전","windDir":"북-북동","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"전북북부앞바다","day":"31일(수)","weather":"흐림","time":"오후","windDir":"북-북동","windSpeed":"6~9","seaHeight":"0.5~1"},{"location":"전북남부앞바다","day":"29일(월)","weather":"비","time":"오전","windDir":"동-남동","windSpeed":"5~8","seaHeight":"0.5~0.5"},{"location":"전북남부앞바다","day":"29일(월)","weather":"비","time":"오후","windDir":"동-남동","windSpeed":"6~9","seaHeight":"0.5~1"},{"location":"전북남부앞바다","day":"30일(화)","weather":"비","time":"오전","windDir":"동-남동","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"전북남부앞바다","day":"30일(화)","weather":"비","time":"오후","windDir":"북동-동","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"전북남부앞바다","day":"31일(수)","weather":"비","time":"오전","windDir":"북-북동","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"전북남부앞바다","day":"31일(수)","weather":"흐림","time":"오후","windDir":"북-북동","windSpeed":"6~9","seaHeight":"0.5~1"},{"location":"전남북부서해앞바다","day":"29일(월)","weather":"비","time":"오전","windDir":"동-남동","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"전남북부서해앞바다","day":"29일(월)","weather":"비","time":"오후","windDir":"동-남동","windSpeed":"8~12","seaHeight":"1~2"},{"location":"전남북부서해앞바다","day":"30일(화)","weather":"비","time":"오전","windDir":"동-남동","windSpeed":"9~13","seaHeight":"1.5~2.5"},{"location":"전남북부서해앞바다","day":"30일(화)","weather":"비","time":"오후","windDir":"북동-동","windSpeed":"9~13","seaHeight":"1.5~2.5"},{"location":"전남북부서해앞바다","day":"31일(수)","weather":"비","time":"오전","windDir":"북-북동","windSpeed":"9~13","seaHeight":"1.5~2.5"},{"location":"전남북부서해앞바다","day":"31일(수)","weather":"흐림","time":"오후","windDir":"북-북동","windSpeed":"8~12","seaHeight":"1~2"},{"location":"전남중부서해앞바다","day":"29일(월)","weather":"흐림","time":"오전","windDir":"동-남동","windSpeed":"5~8","seaHeight":"0.5~0.5"},{"location":"전남중부서해앞바다","day":"29일(월)","weather":"흐림","time":"오후","windDir":"동-남동","windSpeed":"6~9","seaHeight":"0.5~1"},{"location":"전남중부서해앞바다","day":"30일(화)","weather":"비","time":"오전","windDir":"동-남동","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"전남중부서해앞바다","day":"30일(화)","weather":"비","time":"오후","windDir":"북동-동","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"전남중부서해앞바다","day":"31일(수)","weather":"비","time":"오전","windDir":"북-북동","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"전남중부서해앞바다","day":"31일(수)","weather":"흐림","time":"오후","windDir":"북-북동","windSpeed":"6~9","seaHeight":"0.5~1"},{"location":"전남남부서해앞바다","day":"29일(월)","weather":"흐림","time":"오전","windDir":"동-남동","windSpeed":"5~8","seaHeight":"0.5~0.5"},{"location":"전남남부서해앞바다","day":"29일(월)","weather":"흐림","time":"오후","windDir":"동-남동","windSpeed":"6~9","seaHeight":"0.5~1"},{"location":"전남남부서해앞바다","day":"30일(화)","weather":"비","time":"오전","windDir":"동-남동","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"전남남부서해앞바다","day":"30일(화)","weather":"비","time":"오후","windDir":"북동-동","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"전남남부서해앞바다","day":"31일(수)","weather":"비","time":"오전","windDir":"북-북동","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"전남남부서해앞바다","day":"31일(수)","weather":"흐림","time":"오후","windDir":"북-북동","windSpeed":"6~9","seaHeight":"0.5~1"},{"location":"남해서부서쪽먼바다","day":"29일(월)","weather":"구름많음","time":"오전","windDir":"북동-동","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"남해서부서쪽먼바다","day":"29일(월)","weather":"흐림","time":"오후","windDir":"북동-동","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"남해서부서쪽먼바다","day":"30일(화)","weather":"비","time":"오전","windDir":"동-남동","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"남해서부서쪽먼바다","day":"30일(화)","weather":"비","time":"오후","windDir":"남-남서","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"남해서부서쪽먼바다","day":"31일(수)","weather":"비","time":"오전","windDir":"남-남서","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"남해서부서쪽먼바다","day":"31일(수)","weather":"비","time":"오후","windDir":"북서-북","windSpeed":"8~12","seaHeight":"1~2"},{"location":"남해서부앞바다","day":"29일(월)","weather":"흐림","time":"오전","windDir":"북동-동","windSpeed":"6~9","seaHeight":"0.5~1"},{"location":"남해서부앞바다","day":"29일(월)","weather":"흐림","time":"오후","windDir":"동-남동","windSpeed":"6~9","seaHeight":"0.5~1"},{"location":"남해서부앞바다","day":"30일(화)","weather":"비","time":"오전","windDir":"동-남동","windSpeed":"6~9","seaHeight":"0.5~1"},{"location":"남해서부앞바다","day":"30일(화)","weather":"비","time":"오후","windDir":"남동-남","windSpeed":"6~9","seaHeight":"0.5~0.5"},{"location":"남해서부앞바다","day":"31일(수)","weather":"비","time":"오전","windDir":"남서-서","windSpeed":"6~9","seaHeight":"0.5~1"},{"location":"남해서부앞바다","day":"31일(수)","weather":"흐림","time":"오후","windDir":"북서-북","windSpeed":"6~9","seaHeight":"0.5~1"},{"location":"남해서부동쪽먼바다","day":"29일(월)","weather":"구름많음","time":"오전","windDir":"북동-동","windSpeed":"7~11","seaHeight":"1~1.5"},{"location":"남해서부동쪽먼바다","day":"29일(월)","weather":"흐림","time":"오후","windDir":"동-남동","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"남해서부동쪽먼바다","day":"30일(화)","weather":"비","time":"오전","windDir":"동-남동","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"남해서부동쪽먼바다","day":"30일(화)","weather":"비","time":"오후","windDir":"남동-남","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"남해서부동쪽먼바다","day":"31일(수)","weather":"비","time":"오전","windDir":"남서-서","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"남해서부동쪽먼바다","day":"31일(수)","weather":"비","time":"오후","windDir":"북서-북","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"전남서부남해앞바다","day":"29일(월)","weather":"흐림","time":"오전","windDir":"북동-동","windSpeed":"6~9","seaHeight":"0.5~1"},{"location":"전남서부남해앞바다","day":"29일(월)","weather":"흐림","time":"오후","windDir":"동-남동","windSpeed":"6~9","seaHeight":"0.5~1"},{"location":"전남서부남해앞바다","day":"30일(화)","weather":"비","time":"오전","windDir":"동-남동","windSpeed":"6~9","seaHeight":"0.5~1"},{"location":"전남서부남해앞바다","day":"30일(화)","weather":"비","time":"오후","windDir":"남동-남","windSpeed":"6~9","seaHeight":"0.5~1"},{"location":"전남서부남해앞바다","day":"31일(수)","weather":"비","time":"오전","windDir":"남서-서","windSpeed":"6~9","seaHeight":"0.5~1"},{"location":"전남서부남해앞바다","day":"31일(수)","weather":"흐림","time":"오후","windDir":"북서-북","windSpeed":"6~9","seaHeight":"0.5~1"},{"location":"전남동부남해앞바다","day":"29일(월)","weather":"구름많음","time":"오전","windDir":"북동-동","windSpeed":"6~9","seaHeight":"0.5~1"},{"location":"전남동부남해앞바다","day":"29일(월)","weather":"흐림","time":"오후","windDir":"동-남동","windSpeed":"6~9","seaHeight":"0.5~1"},{"location":"전남동부남해앞바다","day":"30일(화)","weather":"비","time":"오전","windDir":"동-남동","windSpeed":"6~9","seaHeight":"0.5~1"},{"location":"전남동부남해앞바다","day":"30일(화)","weather":"비","time":"오후","windDir":"남동-남","windSpeed":"6~9","seaHeight":"0.5~1"},{"location":"전남동부남해앞바다","day":"31일(수)","weather":"비","time":"오전","windDir":"남서-서","windSpeed":"6~9","seaHeight":"0.5~1"},{"location":"전남동부남해앞바다","day":"31일(수)","weather":"흐림","time":"오후","windDir":"북서-북","windSpeed":"6~9","seaHeight":"0.5~1"},{"location":"남해동부앞바다","day":"29일(월)","weather":"흐림","time":"오전","windDir":"북동-동","windSpeed":"4~8","seaHeight":"0.5~1.5"},{"location":"남해동부앞바다","day":"29일(월)","weather":"흐림","time":"오후","windDir":"북동-동","windSpeed":"4~8","seaHeight":"0.5~1"},{"location":"남해동부앞바다","day":"30일(화)","weather":"비","time":"오전","windDir":"북동-동","windSpeed":"3~7","seaHeight":"0.5~1"},{"location":"남해동부앞바다","day":"30일(화)","weather":"비","time":"오후","windDir":"동-남동","windSpeed":"3~7","seaHeight":"0.5~1"},{"location":"남해동부앞바다","day":"31일(수)","weather":"비","time":"오전","windDir":"남-남서","windSpeed":"3~7","seaHeight":"0.5~1"},{"location":"남해동부앞바다","day":"31일(수)","weather":"비","time":"오후","windDir":"북-북동","windSpeed":"4~9","seaHeight":"0.5~2"},{"location":"남해동부바깥먼바다","day":"29일(월)","weather":"구름많음","time":"오전","windDir":"남동-남","windSpeed":"5~9","seaHeight":"0.5~1.5"},{"location":"남해동부바깥먼바다","day":"29일(월)","weather":"흐림","time":"오후","windDir":"동-남동","windSpeed":"5~8","seaHeight":"0.5~1.5"},{"location":"남해동부바깥먼바다","day":"30일(화)","weather":"비","time":"오전","windDir":"동-남동","windSpeed":"5~8","seaHeight":"0.5~1.5"},{"location":"남해동부바깥먼바다","day":"30일(화)","weather":"비","time":"오후","windDir":"남동-남","windSpeed":"5~8","seaHeight":"0.5~1.5"},{"location":"남해동부바깥먼바다","day":"31일(수)","weather":"비","time":"오전","windDir":"남-남서","windSpeed":"5~8","seaHeight":"0.5~1.5"},{"location":"남해동부바깥먼바다","day":"31일(수)","weather":"비","time":"오후","windDir":"남서-서","windSpeed":"5~8","seaHeight":"0.5~1.5"},{"location":"남해동부안쪽먼바다","day":"29일(월)","weather":"구름많음","time":"오전","windDir":"북동-동","windSpeed":"5~9","seaHeight":"1~2"},{"location":"남해동부안쪽먼바다","day":"29일(월)","weather":"흐림","time":"오후","windDir":"북동-동","windSpeed":"5~9","seaHeight":"0.5~1.5"},{"location":"남해동부안쪽먼바다","day":"30일(화)","weather":"비","time":"오전","windDir":"동-남동","windSpeed":"5~8","seaHeight":"0.5~1.5"},{"location":"남해동부안쪽먼바다","day":"30일(화)","weather":"비","time":"오후","windDir":"남동-남","windSpeed":"5~8","seaHeight":"0.5~1.5"},{"location":"남해동부안쪽먼바다","day":"31일(수)","weather":"비","time":"오전","windDir":"남-남서","windSpeed":"5~8","seaHeight":"0.5~1.5"},{"location":"남해동부안쪽먼바다","day":"31일(수)","weather":"비","time":"오후","windDir":"북-북동","windSpeed":"5~9","seaHeight":"1~2"},{"location":"부산앞바다","day":"29일(월)","weather":"흐림","time":"오전","windDir":"북동-동","windSpeed":"5~8","seaHeight":"0.5~1.5"},{"location":"부산앞바다","day":"29일(월)","weather":"흐림","time":"오후","windDir":"북동-동","windSpeed":"5~8","seaHeight":"0.5~1"},{"location":"부산앞바다","day":"30일(화)","weather":"비","time":"오전","windDir":"북동-동","windSpeed":"4~7","seaHeight":"0.5~1"},{"location":"부산앞바다","day":"30일(화)","weather":"비","time":"오후","windDir":"북동-동","windSpeed":"4~7","seaHeight":"0.5~1"},{"location":"부산앞바다","day":"31일(수)","weather":"비","time":"오전","windDir":"남-남서","windSpeed":"4~7","seaHeight":"0.5~1"},{"location":"부산앞바다","day":"31일(수)","weather":"비","time":"오후","windDir":"북-북동","windSpeed":"5~9","seaHeight":"1~2"},{"location":"경남중부남해앞바다","day":"29일(월)","weather":"흐림","time":"오전","windDir":"북동-동","windSpeed":"4~6","seaHeight":"0.5~0.5"},{"location":"경남중부남해앞바다","day":"29일(월)","weather":"흐림","time":"오후","windDir":"북동-동","windSpeed":"4~6","seaHeight":"0.5~0.5"},{"location":"경남중부남해앞바다","day":"30일(화)","weather":"비","time":"오전","windDir":"북동-동","windSpeed":"3~5","seaHeight":"0.5~0.5"},{"location":"경남중부남해앞바다","day":"30일(화)","weather":"비","time":"오후","windDir":"동-남동","windSpeed":"3~5","seaHeight":"0.5~0.5"},{"location":"경남중부남해앞바다","day":"31일(수)","weather":"비","time":"오전","windDir":"남-남서","windSpeed":"3~5","seaHeight":"0.5~0.5"},{"location":"경남중부남해앞바다","day":"31일(수)","weather":"비","time":"오후","windDir":"북-북동","windSpeed":"4~7","seaHeight":"0.5~0.5"},{"location":"경남서부남해앞바다","day":"29일(월)","weather":"흐림","time":"오전","windDir":"북-북동","windSpeed":"4~7","seaHeight":"0.5~1"},{"location":"경남서부남해앞바다","day":"29일(월)","weather":"흐림","time":"오후","windDir":"북동-동","windSpeed":"4~7","seaHeight":"0.5~1"},{"location":"경남서부남해앞바다","day":"30일(화)","weather":"비","time":"오전","windDir":"북동-동","windSpeed":"3~6","seaHeight":"0.5~1"},{"location":"경남서부남해앞바다","day":"30일(화)","weather":"비","time":"오후","windDir":"남동-남","windSpeed":"3~6","seaHeight":"0.5~1"},{"location":"경남서부남해앞바다","day":"31일(수)","weather":"비","time":"오전","windDir":"남-남서","windSpeed":"3~6","seaHeight":"0.5~1"},{"location":"경남서부남해앞바다","day":"31일(수)","weather":"비","time":"오후","windDir":"북-북동","windSpeed":"4~8","seaHeight":"0.5~1"},{"location":"거제시동부앞바다","day":"29일(월)","weather":"흐림","time":"오전","windDir":"북동-동","windSpeed":"5~8","seaHeight":"0.5~1.5"},{"location":"거제시동부앞바다","day":"29일(월)","weather":"흐림","time":"오후","windDir":"북동-동","windSpeed":"5~8","seaHeight":"0.5~1"},{"location":"거제시동부앞바다","day":"30일(화)","weather":"비","time":"오전","windDir":"북동-동","windSpeed":"4~7","seaHeight":"0.5~1"},{"location":"거제시동부앞바다","day":"30일(화)","weather":"비","time":"오후","windDir":"동-남동","windSpeed":"4~7","seaHeight":"0.5~1"},{"location":"거제시동부앞바다","day":"31일(수)","weather":"비","time":"오전","windDir":"남-남서","windSpeed":"4~7","seaHeight":"0.5~1"},{"location":"거제시동부앞바다","day":"31일(수)","weather":"비","time":"오후","windDir":"북-북동","windSpeed":"5~9","seaHeight":"1~2"},{"location":"제주도남쪽바깥먼바다","day":"29일(월)","weather":"흐림","time":"오전","windDir":"북동-동","windSpeed":"5~8","seaHeight":"0.5~1.5"},{"location":"제주도남쪽바깥먼바다","day":"29일(월)","weather":"흐림","time":"오후","windDir":"북동-동","windSpeed":"5~8","seaHeight":"0.5~1"},{"location":"제주도남쪽바깥먼바다","day":"30일(화)","weather":"비","time":"오전","windDir":"북동-동","windSpeed":"4~7","seaHeight":"0.5~1"},{"location":"제주도남쪽바깥먼바다","day":"30일(화)","weather":"비","time":"오후","windDir":"동-남동","windSpeed":"4~7","seaHeight":"0.5~1"},{"location":"제주도남쪽바깥먼바다","day":"31일(수)","weather":"비","time":"오전","windDir":"남-남서","windSpeed":"4~7","seaHeight":"0.5~1"},{"location":"제주도남쪽바깥먼바다","day":"31일(수)","weather":"비","time":"오후","windDir":"북-북동","windSpeed":"5~9","seaHeight":"1~2"},{"location":"제주도남서쪽안쪽먼바다","day":"29일(월)","weather":"흐림","time":"오전","windDir":"북동-동","windSpeed":"8~12","seaHeight":"1~2"},{"location":"제주도남서쪽안쪽먼바다","day":"29일(월)","weather":"흐림","time":"오후","windDir":"북동-동","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"제주도남서쪽안쪽먼바다","day":"30일(화)","weather":"비","time":"오전","windDir":"남동-남","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"제주도남서쪽안쪽먼바다","day":"30일(화)","weather":"비","time":"오후","windDir":"남-남서","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"제주도남서쪽안쪽먼바다","day":"31일(수)","weather":"비","time":"오전","windDir":"남-남서","windSpeed":"8~12","seaHeight":"1~2"},{"location":"제주도남서쪽안쪽먼바다","day":"31일(수)","weather":"비","time":"오후","windDir":"북서-북","windSpeed":"9~13","seaHeight":"1.5~2.5"},{"location":"제주도남동쪽안쪽먼바다","day":"29일(월)","weather":"흐림","time":"오전","windDir":"북동-동","windSpeed":"8~12","seaHeight":"1~2"},{"location":"제주도남동쪽안쪽먼바다","day":"29일(월)","weather":"흐림","time":"오후","windDir":"북동-동","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"제주도남동쪽안쪽먼바다","day":"30일(화)","weather":"비","time":"오전","windDir":"남동-남","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"제주도남동쪽안쪽먼바다","day":"30일(화)","weather":"비","time":"오후","windDir":"남-남서","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"제주도남동쪽안쪽먼바다","day":"31일(수)","weather":"비","time":"오전","windDir":"남-남서","windSpeed":"8~12","seaHeight":"1~2"},{"location":"제주도남동쪽안쪽먼바다","day":"31일(수)","weather":"비","time":"오후","windDir":"북서-북","windSpeed":"9~13","seaHeight":"1.5~2.5"},{"location":"제주도앞바다","day":"29일(월)","weather":"구름많음","time":"오전","windDir":"북동-동","windSpeed":"7~12","seaHeight":"0.5~2"},{"location":"제주도앞바다","day":"29일(월)","weather":"흐림","time":"오후","windDir":"북동-동","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"제주도앞바다","day":"30일(화)","weather":"비","time":"오전","windDir":"동-남동","windSpeed":"6~8","seaHeight":"0.5~1"},{"location":"제주도앞바다","day":"30일(화)","weather":"비","time":"오후","windDir":"남-남서","windSpeed":"6~8","seaHeight":"0.5~1"},{"location":"제주도앞바다","day":"31일(수)","weather":"비","time":"오전","windDir":"남-남서","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"제주도앞바다","day":"31일(수)","weather":"비","time":"오후","windDir":"북서-북","windSpeed":"8~12","seaHeight":"1~2"},{"location":"제주도북부앞바다","day":"29일(월)","weather":"흐림","time":"오전","windDir":"북동-동","windSpeed":"8~12","seaHeight":"1~2"},{"location":"제주도북부앞바다","day":"29일(월)","weather":"흐림","time":"오후","windDir":"동-남동","windSpeed":"8~12","seaHeight":"1~2"},{"location":"제주도북부앞바다","day":"30일(화)","weather":"비","time":"오전","windDir":"남동-남","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"제주도북부앞바다","day":"30일(화)","weather":"비","time":"오후","windDir":"남-남서","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"제주도북부앞바다","day":"31일(수)","weather":"비","time":"오전","windDir":"남-남서","windSpeed":"8~12","seaHeight":"1~2"},{"location":"제주도북부앞바다","day":"31일(수)","weather":"비","time":"오후","windDir":"북서-북","windSpeed":"9~13","seaHeight":"1.5~2.5"},{"location":"제주도서부앞바다","day":"29일(월)","weather":"구름많음","time":"오전","windDir":"북동-동","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"제주도서부앞바다","day":"29일(월)","weather":"흐림","time":"오후","windDir":"북동-동","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"제주도서부앞바다","day":"30일(화)","weather":"흐림","time":"오전","windDir":"동-남동","windSpeed":"6~8","seaHeight":"0.5~1"},{"location":"제주도서부앞바다","day":"30일(화)","weather":"비","time":"오후","windDir":"남-남서","windSpeed":"6~8","seaHeight":"0.5~1"},{"location":"제주도서부앞바다","day":"31일(수)","weather":"비","time":"오전","windDir":"남-남서","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"제주도서부앞바다","day":"31일(수)","weather":"비","time":"오후","windDir":"북서-북","windSpeed":"8~12","seaHeight":"1~2"},{"location":"제주도남부앞바다","day":"29일(월)","weather":"구름많음","time":"오전","windDir":"북동-동","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"제주도남부앞바다","day":"29일(월)","weather":"흐림","time":"오후","windDir":"북동-동","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"제주도남부앞바다","day":"30일(화)","weather":"비","time":"오전","windDir":"동-남동","windSpeed":"6~8","seaHeight":"0.5~1"},{"location":"제주도남부앞바다","day":"30일(화)","weather":"비","time":"오후","windDir":"남-남서","windSpeed":"6~8","seaHeight":"0.5~1"},{"location":"제주도남부앞바다","day":"31일(수)","weather":"비","time":"오전","windDir":"남-남서","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"제주도남부앞바다","day":"31일(수)","weather":"비","time":"오후","windDir":"북서-북","windSpeed":"8~12","seaHeight":"1~2"},{"location":"제주도동부앞바다","day":"29일(월)","weather":"구름많음","time":"오전","windDir":"북동-동","windSpeed":"8~12","seaHeight":"1~2"},{"location":"제주도동부앞바다","day":"29일(월)","weather":"흐림","time":"오후","windDir":"북동-동","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"제주도동부앞바다","day":"30일(화)","weather":"비","time":"오전","windDir":"동-남동","windSpeed":"6~8","seaHeight":"0.5~1"},{"location":"제주도동부앞바다","day":"30일(화)","weather":"흐림","time":"오후","windDir":"남-남서","windSpeed":"6~8","seaHeight":"0.5~1"},{"location":"제주도동부앞바다","day":"31일(수)","weather":"비","time":"오전","windDir":"남-남서","windSpeed":"7~11","seaHeight":"0.5~1.5"},{"location":"제주도동부앞바다","day":"31일(수)","weather":"비","time":"오후","windDir":"북서-북","windSpeed":"8~12","seaHeight":"1~2"},{"location":"동해남부남쪽바깥먼바다","day":"29일(월)","weather":"구름많음","time":"오전","windDir":"동-남동","windSpeed":"5~9","seaHeight":"1~2"},{"location":"동해남부남쪽바깥먼바다","day":"29일(월)","weather":"흐림","time":"오후","windDir":"북동-동","windSpeed":"5~9","seaHeight":"0.5~1.5"},{"location":"동해남부남쪽바깥먼바다","day":"30일(화)","weather":"비","time":"오전","windDir":"북동-동","windSpeed":"5~8","seaHeight":"0.5~1.5"},{"location":"동해남부남쪽바깥먼바다","day":"30일(화)","weather":"비","time":"오후","windDir":"북동-동","windSpeed":"5~8","seaHeight":"0.5~1.5"},{"location":"동해남부남쪽바깥먼바다","day":"31일(수)","weather":"비","time":"오전","windDir":"남-남서","windSpeed":"5~8","seaHeight":"0.5~1.5"},{"location":"동해남부남쪽바깥먼바다","day":"31일(수)","weather":"비","time":"오후","windDir":"북-북동","windSpeed":"5~9","seaHeight":"0.5~1.5"},{"location":"동해남부남쪽안쪽먼바다","day":"29일(월)","weather":"구름많음","time":"오전","windDir":"북동-동","windSpeed":"5~9","seaHeight":"1~2"},{"location":"동해남부남쪽안쪽먼바다","day":"29일(월)","weather":"흐림","time":"오후","windDir":"북동-동","windSpeed":"5~9","seaHeight":"0.5~1.5"},{"location":"동해남부남쪽안쪽먼바다","day":"30일(화)","weather":"비","time":"오전","windDir":"북동-동","windSpeed":"5~8","seaHeight":"0.5~1.5"},{"location":"동해남부남쪽안쪽먼바다","day":"30일(화)","weather":"비","time":"오후","windDir":"북동-동","windSpeed":"5~8","seaHeight":"0.5~1.5"},{"location":"동해남부남쪽안쪽먼바다","day":"31일(수)","weather":"비","time":"오전","windDir":"남-남서","windSpeed":"5~8","seaHeight":"0.5~1.5"},{"location":"동해남부남쪽안쪽먼바다","day":"31일(수)","weather":"비","time":"오후","windDir":"북-북동","windSpeed":"5~9","seaHeight":"1~2"},{"location":"동해남부앞바다","day":"29일(월)","weather":"흐림","time":"오전","windDir":"북동-동","windSpeed":"5~9","seaHeight":"0.5~1.5"},{"location":"동해남부앞바다","day":"29일(월)","weather":"흐림","time":"오후","windDir":"북동-동","windSpeed":"5~9","seaHeight":"0.5~1"},{"location":"동해남부앞바다","day":"30일(화)","weather":"비","time":"오전","windDir":"북동-동","windSpeed":"4~8","seaHeight":"0.5~1"},{"location":"동해남부앞바다","day":"30일(화)","weather":"비","time":"오후","windDir":"북동-동","windSpeed":"5~10","seaHeight":"0.5~1.5"},{"location":"동해남부앞바다","day":"31일(수)","weather":"비","time":"오전","windDir":"남-남서","windSpeed":"5~10","seaHeight":"0.5~1.5"},{"location":"동해남부앞바다","day":"31일(수)","weather":"비","time":"오후","windDir":"북서-북","windSpeed":"5~12","seaHeight":"1~2"},{"location":"동해남부북쪽바깥먼바다","day":"29일(월)","weather":"흐림","time":"오전","windDir":"북동-동","windSpeed":"5~9","seaHeight":"0.5~1.5"},{"location":"동해남부북쪽바깥먼바다","day":"29일(월)","weather":"흐림","time":"오후","windDir":"북동-동","windSpeed":"5~9","seaHeight":"0.5~1"},{"location":"동해남부북쪽바깥먼바다","day":"30일(화)","weather":"비","time":"오전","windDir":"북동-동","windSpeed":"4~8","seaHeight":"0.5~1"},{"location":"동해남부북쪽바깥먼바다","day":"30일(화)","weather":"비","time":"오후","windDir":"북동-동","windSpeed":"5~10","seaHeight":"0.5~1.5"},{"location":"동해남부북쪽바깥먼바다","day":"31일(수)","weather":"비","time":"오전","windDir":"남-남서","windSpeed":"5~10","seaHeight":"0.5~1.5"},{"location":"동해남부북쪽바깥먼바다","day":"31일(수)","weather":"비","time":"오후","windDir":"북서-북","windSpeed":"5~12","seaHeight":"1~2"},{"location":"동해남부북쪽안쪽먼바다","day":"29일(월)","weather":"흐림","time":"오전","windDir":"남동-남","windSpeed":"6~10","seaHeight":"0.5~1.5"},{"location":"동해남부북쪽안쪽먼바다","day":"29일(월)","weather":"흐림","time":"오후","windDir":"남동-남","windSpeed":"5~9","seaHeight":"0.5~1"},{"location":"동해남부북쪽안쪽먼바다","day":"30일(화)","weather":"비","time":"오전","windDir":"북동-동","windSpeed":"5~9","seaHeight":"0.5~1"},{"location":"동해남부북쪽안쪽먼바다","day":"30일(화)","weather":"비","time":"오후","windDir":"북동-동","windSpeed":"6~10","seaHeight":"0.5~1.5"},{"location":"동해남부북쪽안쪽먼바다","day":"31일(수)","weather":"비","time":"오전","windDir":"남-남서","windSpeed":"6~10","seaHeight":"0.5~1.5"},{"location":"동해남부북쪽안쪽먼바다","day":"31일(수)","weather":"비","time":"오후","windDir":"북서-북","windSpeed":"8~13","seaHeight":"1~2.5"},{"location":"경북북부앞바다","day":"29일(월)","weather":"흐림","time":"오전","windDir":"북동-동","windSpeed":"5~8","seaHeight":"0.5~1"},{"location":"경북북부앞바다","day":"29일(월)","weather":"흐림","time":"오후","windDir":"남동-남","windSpeed":"5~8","seaHeight":"0.5~1"},{"location":"경북북부앞바다","day":"30일(화)","weather":"비","time":"오전","windDir":"북동-동","windSpeed":"4~7","seaHeight":"0.5~1"},{"location":"경북북부앞바다","day":"30일(화)","weather":"비","time":"오후","windDir":"북동-동","windSpeed":"6~10","seaHeight":"0.5~1.5"},{"location":"경북북부앞바다","day":"31일(수)","weather":"비","time":"오전","windDir":"남-남서","windSpeed":"6~10","seaHeight":"0.5~1.5"},{"location":"경북북부앞바다","day":"31일(수)","weather":"비","time":"오후","windDir":"북서-북","windSpeed":"8~12","seaHeight":"1~2"},{"location":"경북남부앞바다","day":"29일(월)","weather":"흐림","time":"오전","windDir":"북동-동","windSpeed":"5~8","seaHeight":"0.5~1"},{"location":"경북남부앞바다","day":"29일(월)","weather":"흐림","time":"오후","windDir":"북동-동","windSpeed":"5~8","seaHeight":"0.5~1"},{"location":"경북남부앞바다","day":"30일(화)","weather":"비","time":"오전","windDir":"북-북동","windSpeed":"4~7","seaHeight":"0.5~1"},{"location":"경북남부앞바다","day":"30일(화)","weather":"비","time":"오후","windDir":"북-북동","windSpeed":"5~9","seaHeight":"0.5~1"},{"location":"경북남부앞바다","day":"31일(수)","weather":"비","time":"오전","windDir":"남-남서","windSpeed":"5~9","seaHeight":"0.5~1"},{"location":"경북남부앞바다","day":"31일(수)","weather":"비","time":"오후","windDir":"북서-북","windSpeed":"8~12","seaHeight":"1~2"},{"location":"울산앞바다","day":"29일(월)","weather":"흐림","time":"오전","windDir":"동-남동","windSpeed":"6~10","seaHeight":"0.5~1.5"},{"location":"울산앞바다","day":"29일(월)","weather":"흐림","time":"오후","windDir":"동-남동","windSpeed":"5~9","seaHeight":"0.5~1"},{"location":"울산앞바다","day":"30일(화)","weather":"비","time":"오전","windDir":"북동-동","windSpeed":"5~9","seaHeight":"0.5~1"},{"location":"울산앞바다","day":"30일(화)","weather":"비","time":"오후","windDir":"북동-동","windSpeed":"6~10","seaHeight":"0.5~1.5"},{"location":"울산앞바다","day":"31일(수)","weather":"비","time":"오전","windDir":"남-남서","windSpeed":"6~10","seaHeight":"0.5~1.5"},{"location":"울산앞바다","day":"31일(수)","weather":"비","time":"오후","windDir":"남서-서","windSpeed":"8~13","seaHeight":"1~2.5"},{"location":"동해중부바깥먼바다","day":"29일(월)","weather":"흐림","time":"오전","windDir":"동-남동","windSpeed":"5~9","seaHeight":"0.5~1"},{"location":"동해중부바깥먼바다","day":"29일(월)","weather":"흐림","time":"오후","windDir":"동-남동","windSpeed":"5~9","seaHeight":"0.5~1"},{"location":"동해중부바깥먼바다","day":"30일(화)","weather":"비","time":"오전","windDir":"동-남동","windSpeed":"6~10","seaHeight":"0.5~1.5"},{"location":"동해중부바깥먼바다","day":"30일(화)","weather":"비","time":"오후","windDir":"북동-동","windSpeed":"8~12","seaHeight":"1~2"},{"location":"동해중부바깥먼바다","day":"31일(수)","weather":"비","time":"오전","windDir":"북-북동","windSpeed":"8~14","seaHeight":"1~3"},{"location":"동해중부바깥먼바다","day":"31일(수)","weather":"비","time":"오후","windDir":"북-북동","windSpeed":"8~14","seaHeight":"1~3"},{"location":"동해중부안쪽먼바다","day":"29일(월)","weather":"비","time":"오전","windDir":"남동-남","windSpeed":"5~9","seaHeight":"0.5~1"},{"location":"동해중부안쪽먼바다","day":"29일(월)","weather":"비","time":"오후","windDir":"동-남동","windSpeed":"5~9","seaHeight":"0.5~1"},{"location":"동해중부안쪽먼바다","day":"30일(화)","weather":"비","time":"오전","windDir":"동-남동","windSpeed":"6~10","seaHeight":"0.5~1.5"},{"location":"동해중부안쪽먼바다","day":"30일(화)","weather":"비","time":"오후","windDir":"북동-동","windSpeed":"8~12","seaHeight":"1~2"},{"location":"동해중부안쪽먼바다","day":"31일(수)","weather":"비","time":"오전","windDir":"북-북동","windSpeed":"8~13","seaHeight":"1~2.5"},{"location":"동해중부안쪽먼바다","day":"31일(수)","weather":"비","time":"오후","windDir":"북-북동","windSpeed":"8~13","seaHeight":"1~2.5"},{"location":"동해중부앞바다","day":"29일(월)","weather":"흐림","time":"오전","windDir":"남동-남","windSpeed":"5~9","seaHeight":"0.5~1"},{"location":"동해중부앞바다","day":"29일(월)","weather":"흐림","time":"오후","windDir":"남동-남","windSpeed":"5~9","seaHeight":"0.5~1"},{"location":"동해중부앞바다","day":"30일(화)","weather":"비","time":"오전","windDir":"남동-남","windSpeed":"5~9","seaHeight":"0.5~1"},{"location":"동해중부앞바다","day":"30일(화)","weather":"비","time":"오후","windDir":"남동-남","windSpeed":"6~10","seaHeight":"0.5~1.5"},{"location":"동해중부앞바다","day":"31일(수)","weather":"비","time":"오전","windDir":"북-북동","windSpeed":"8~13","seaHeight":"1~2.5"},{"location":"동해중부앞바다","day":"31일(수)","weather":"비","time":"오후","windDir":"북서-북","windSpeed":"8~13","seaHeight":"1~2.5"},{"location":"강원북부앞바다","day":"29일(월)","weather":"흐림","time":"오전","windDir":"남동-남","windSpeed":"5~9","seaHeight":"0.5~1"},{"location":"강원북부앞바다","day":"29일(월)","weather":"흐림","time":"오후","windDir":"남동-남","windSpeed":"5~9","seaHeight":"0.5~1"},{"location":"강원북부앞바다","day":"30일(화)","weather":"비","time":"오전","windDir":"남동-남","windSpeed":"5~9","seaHeight":"0.5~1"},{"location":"강원북부앞바다","day":"30일(화)","weather":"비","time":"오후","windDir":"남동-남","windSpeed":"6~10","seaHeight":"0.5~1.5"},{"location":"강원북부앞바다","day":"31일(수)","weather":"비","time":"오전","windDir":"북-북동","windSpeed":"8~13","seaHeight":"1~2.5"},{"location":"강원북부앞바다","day":"31일(수)","weather":"비","time":"오후","windDir":"북서-북","windSpeed":"8~13","seaHeight":"1~2.5"},{"location":"강원중부앞바다","day":"29일(월)","weather":"흐림","time":"오전","windDir":"남동-남","windSpeed":"5~9","seaHeight":"0.5~1"},{"location":"강원중부앞바다","day":"29일(월)","weather":"흐림","time":"오후","windDir":"남동-남","windSpeed":"5~9","seaHeight":"0.5~1"},{"location":"강원중부앞바다","day":"30일(화)","weather":"비","time":"오전","windDir":"남동-남","windSpeed":"5~9","seaHeight":"0.5~1"},{"location":"강원중부앞바다","day":"30일(화)","weather":"비","time":"오후","windDir":"북동-동","windSpeed":"6~10","seaHeight":"0.5~1.5"},{"location":"강원중부앞바다","day":"31일(수)","weather":"비","time":"오전","windDir":"북-북동","windSpeed":"8~12","seaHeight":"1~2"},{"location":"강원중부앞바다","day":"31일(수)","weather":"비","time":"오후","windDir":"북서-북","windSpeed":"8~12","seaHeight":"1~2"},{"location":"강원남부앞바다","day":"29일(월)","weather":"흐림","time":"오전","windDir":"남동-남","windSpeed":"5~9","seaHeight":"0.5~1"},{"location":"강원남부앞바다","day":"29일(월)","weather":"흐림","time":"오후","windDir":"동-남동","windSpeed":"5~9","seaHeight":"0.5~1"},{"location":"강원남부앞바다","day":"30일(화)","weather":"비","time":"오전","windDir":"북동-동","windSpeed":"5~9","seaHeight":"0.5~1"},{"location":"강원남부앞바다","day":"30일(화)","weather":"비","time":"오후","windDir":"북서-북","windSpeed":"8~10","seaHeight":"1~1.5"},{"location":"강원남부앞바다","day":"31일(수)","weather":"비","time":"오전","windDir":"북-북동","windSpeed":"8~13","seaHeight":"1~2.5"},{"location":"강원남부앞바다","day":"31일(수)","weather":"비","time":"오후","windDir":"북서-북","windSpeed":"8~13","seaHeight":"1~2.5"},{"location":"동해북부먼바다","day":"29일(월)","weather":"비","time":"오전","windDir":"남동-남","windSpeed":"6~10","seaHeight":"0.5~1.5"},{"location":"동해북부먼바다","day":"29일(월)","weather":"비","time":"오후","windDir":"남동-남","windSpeed":"6~10","seaHeight":"0.5~1.5"},{"location":"동해북부먼바다","day":"30일(화)","weather":"비","time":"오전","windDir":"남-남서","windSpeed":"5~9","seaHeight":"0.5~1"},{"location":"동해북부먼바다","day":"30일(화)","weather":"비","time":"오후","windDir":"남동-남","windSpeed":"6~10","seaHeight":"0.5~1.5"},{"location":"동해북부먼바다","day":"31일(수)","weather":"비","time":"오전","windDir":"북동-동","windSpeed":"8~12","seaHeight":"1~2"},{"location":"동해북부먼바다","day":"31일(수)","weather":"비","time":"오후","windDir":"북동-동","windSpeed":"8~12","seaHeight":"1~2"},{"location":"동해북부앞바다","day":"29일(월)","weather":"흐림","time":"오전","windDir":"남동-남","windSpeed":"5~9","seaHeight":"0.5~1"},{"location":"동해북부앞바다","day":"29일(월)","weather":"흐림","time":"오후","windDir":"남동-남","windSpeed":"5~9","seaHeight":"0.5~1"},{"location":"동해북부앞바다","day":"30일(화)","weather":"비","time":"오전","windDir":"서-북서","windSpeed":"5~9","seaHeight":"0.5~1"},{"location":"동해북부앞바다","day":"30일(화)","weather":"비","time":"오후","windDir":"남동-남","windSpeed":"6~10","seaHeight":"0.5~1.5"},{"location":"동해북부앞바다","day":"31일(수)","weather":"비","time":"오전","windDir":"북동-동","windSpeed":"8~12","seaHeight":"1~2"},{"location":"동해북부앞바다","day":"31일(수)","weather":"비","time":"오후","windDir":"북-북동","windSpeed":"8~12","seaHeight":"1~2"}]
+[
+	{
+		"location": "서해북부앞바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "남동-남",
+		"windSpeed": "6~12",
+		"seaHeight": "0.5~2"
+	},
+	{
+		"location": "서해북부앞바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "남-남서",
+		"windSpeed": "6~12",
+		"seaHeight": "0.5~2"
+	},
+	{
+		"location": "서해북부앞바다",
+		"day": "17일(토)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "서-북서",
+		"windSpeed": "4~8",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "서해북부앞바다",
+		"day": "17일(토)",
+		"weather": "구름많음",
+		"time": "오후",
+		"windDir": "북서-북",
+		"windSpeed": "3~6",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "서해북부앞바다",
+		"day": "18일(일)",
+		"weather": "구름많음",
+		"time": "오전",
+		"windDir": "북-북동",
+		"windSpeed": "4~8",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "서해북부앞바다",
+		"day": "18일(일)",
+		"weather": "맑음",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "6~11",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "서해북부먼바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "남동-남",
+		"windSpeed": "10~18",
+		"seaHeight": "1.5~3.5"
+	},
+	{
+		"location": "서해북부먼바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "남-남서",
+		"windSpeed": "8~16",
+		"seaHeight": "1.5~3.5"
+	},
+	{
+		"location": "서해북부먼바다",
+		"day": "17일(토)",
+		"weather": "구름많음",
+		"time": "오전",
+		"windDir": "서-북서",
+		"windSpeed": "5~10",
+		"seaHeight": "1~2.5"
+	},
+	{
+		"location": "서해북부먼바다",
+		"day": "17일(토)",
+		"weather": "구름많음",
+		"time": "오후",
+		"windDir": "북서-북",
+		"windSpeed": "4~8",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "서해북부먼바다",
+		"day": "18일(일)",
+		"weather": "구름많음",
+		"time": "오전",
+		"windDir": "북-북동",
+		"windSpeed": "5~10",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "서해북부먼바다",
+		"day": "18일(일)",
+		"weather": "맑음",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "7~15",
+		"seaHeight": "1~3"
+	},
+	{
+		"location": "서해중부앞바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "동-남동",
+		"windSpeed": "6~12",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "서해중부앞바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "남-남서",
+		"windSpeed": "5~12",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "서해중부앞바다",
+		"day": "17일(토)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "남-남서",
+		"windSpeed": "4~8",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "서해중부앞바다",
+		"day": "17일(토)",
+		"weather": "맑음",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "4~9",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "서해중부앞바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북서-북",
+		"windSpeed": "4~10",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "서해중부앞바다",
+		"day": "18일(일)",
+		"weather": "구름많음",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "6~12",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "서해중부바깥먼바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "남동-남",
+		"windSpeed": "10~18",
+		"seaHeight": "1.5~3.5"
+	},
+	{
+		"location": "서해중부바깥먼바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "남서-서",
+		"windSpeed": "8~16",
+		"seaHeight": "1.5~3.5"
+	},
+	{
+		"location": "서해중부바깥먼바다",
+		"day": "17일(토)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북-북동",
+		"windSpeed": "5~10",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "서해중부바깥먼바다",
+		"day": "17일(토)",
+		"weather": "구름많음",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "5~10",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "서해중부바깥먼바다",
+		"day": "18일(일)",
+		"weather": "맑음",
+		"time": "오전",
+		"windDir": "북-북동",
+		"windSpeed": "6~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "서해중부바깥먼바다",
+		"day": "18일(일)",
+		"weather": "맑음",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "8~16",
+		"seaHeight": "1.5~3"
+	},
+	{
+		"location": "서해중부안쪽먼바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "남동-남",
+		"windSpeed": "8~15",
+		"seaHeight": "1~3"
+	},
+	{
+		"location": "서해중부안쪽먼바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "남-남서",
+		"windSpeed": "8~15",
+		"seaHeight": "1~3"
+	},
+	{
+		"location": "서해중부안쪽먼바다",
+		"day": "17일(토)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북-북동",
+		"windSpeed": "5~10",
+		"seaHeight": "0.5~2"
+	},
+	{
+		"location": "서해중부안쪽먼바다",
+		"day": "17일(토)",
+		"weather": "구름많음",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "5~10",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "서해중부안쪽먼바다",
+		"day": "18일(일)",
+		"weather": "맑음",
+		"time": "오전",
+		"windDir": "북-북동",
+		"windSpeed": "6~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "서해중부안쪽먼바다",
+		"day": "18일(일)",
+		"weather": "맑음",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "8~16",
+		"seaHeight": "1.5~3"
+	},
+	{
+		"location": "인천,경기북부앞바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "남동-남",
+		"windSpeed": "8~12",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "인천,경기북부앞바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "남-남서",
+		"windSpeed": "8~12",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "인천,경기북부앞바다",
+		"day": "17일(토)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "서-북서",
+		"windSpeed": "4~8",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "인천,경기북부앞바다",
+		"day": "17일(토)",
+		"weather": "맑음",
+		"time": "오후",
+		"windDir": "북서-북",
+		"windSpeed": "4~8",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "인천,경기북부앞바다",
+		"day": "18일(일)",
+		"weather": "맑음",
+		"time": "오전",
+		"windDir": "북서-북",
+		"windSpeed": "4~8",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "인천,경기북부앞바다",
+		"day": "18일(일)",
+		"weather": "맑음",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "6~11",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "인천,경기남부앞바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "남동-남",
+		"windSpeed": "8~12",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "인천,경기남부앞바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "남-남서",
+		"windSpeed": "8~12",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "인천,경기남부앞바다",
+		"day": "17일(토)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "서-북서",
+		"windSpeed": "4~8",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "인천,경기남부앞바다",
+		"day": "17일(토)",
+		"weather": "맑음",
+		"time": "오후",
+		"windDir": "북서-북",
+		"windSpeed": "4~8",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "인천,경기남부앞바다",
+		"day": "18일(일)",
+		"weather": "맑음",
+		"time": "오전",
+		"windDir": "북서-북",
+		"windSpeed": "4~8",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "인천,경기남부앞바다",
+		"day": "18일(일)",
+		"weather": "구름많음",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "6~11",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "충남북부앞바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "동-남동",
+		"windSpeed": "6~11",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "충남북부앞바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "남-남서",
+		"windSpeed": "5~10",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "충남북부앞바다",
+		"day": "17일(토)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "북서-북",
+		"windSpeed": "4~6",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "충남북부앞바다",
+		"day": "17일(토)",
+		"weather": "맑음",
+		"time": "오후",
+		"windDir": "북서-북",
+		"windSpeed": "4~9",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "충남북부앞바다",
+		"day": "18일(일)",
+		"weather": "맑음",
+		"time": "오전",
+		"windDir": "북-북동",
+		"windSpeed": "5~10",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "충남북부앞바다",
+		"day": "18일(일)",
+		"weather": "맑음",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "6~12",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "충남남부앞바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "동-남동",
+		"windSpeed": "6~11",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "충남남부앞바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "남-남서",
+		"windSpeed": "5~10",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "충남남부앞바다",
+		"day": "17일(토)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북서-북",
+		"windSpeed": "4~6",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "충남남부앞바다",
+		"day": "17일(토)",
+		"weather": "맑음",
+		"time": "오후",
+		"windDir": "북서-북",
+		"windSpeed": "4~9",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "충남남부앞바다",
+		"day": "18일(일)",
+		"weather": "구름많음",
+		"time": "오전",
+		"windDir": "북-북동",
+		"windSpeed": "5~10",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "충남남부앞바다",
+		"day": "18일(일)",
+		"weather": "구름많음",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "6~12",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "서해남부북쪽바깥먼바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "동-남동",
+		"windSpeed": "10~16",
+		"seaHeight": "2~4"
+	},
+	{
+		"location": "서해남부북쪽바깥먼바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "동-남동",
+		"windSpeed": "10~14",
+		"seaHeight": "2~3"
+	},
+	{
+		"location": "서해남부북쪽바깥먼바다",
+		"day": "17일(토)",
+		"weather": "구름많음",
+		"time": "오전",
+		"windDir": "동-남동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "서해남부북쪽바깥먼바다",
+		"day": "17일(토)",
+		"weather": "흐림",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "서해남부북쪽바깥먼바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북-북동",
+		"windSpeed": "9~14",
+		"seaHeight": "1~3"
+	},
+	{
+		"location": "서해남부북쪽바깥먼바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "10~16",
+		"seaHeight": "2~4"
+	},
+	{
+		"location": "서해남부북쪽안쪽먼바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "동-남동",
+		"windSpeed": "10~16",
+		"seaHeight": "2~4"
+	},
+	{
+		"location": "서해남부북쪽안쪽먼바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "동-남동",
+		"windSpeed": "10~14",
+		"seaHeight": "2~3"
+	},
+	{
+		"location": "서해남부북쪽안쪽먼바다",
+		"day": "17일(토)",
+		"weather": "구름많음",
+		"time": "오전",
+		"windDir": "동-남동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "서해남부북쪽안쪽먼바다",
+		"day": "17일(토)",
+		"weather": "흐림",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "서해남부북쪽안쪽먼바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북-북동",
+		"windSpeed": "9~14",
+		"seaHeight": "1~3"
+	},
+	{
+		"location": "서해남부북쪽안쪽먼바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "10~16",
+		"seaHeight": "2~4"
+	},
+	{
+		"location": "서해남부앞바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "동-남동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "서해남부앞바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "동-남동",
+		"windSpeed": "7~11",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "서해남부앞바다",
+		"day": "17일(토)",
+		"weather": "구름많음",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "6~9",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "서해남부앞바다",
+		"day": "17일(토)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "6~9",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "서해남부앞바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북-북동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "서해남부앞바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "서해남부남쪽바깥먼바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "동-남동",
+		"windSpeed": "10~16",
+		"seaHeight": "2~4"
+	},
+	{
+		"location": "서해남부남쪽바깥먼바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "동-남동",
+		"windSpeed": "10~14",
+		"seaHeight": "2~3"
+	},
+	{
+		"location": "서해남부남쪽바깥먼바다",
+		"day": "17일(토)",
+		"weather": "구름많음",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "서해남부남쪽바깥먼바다",
+		"day": "17일(토)",
+		"weather": "흐림",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "서해남부남쪽바깥먼바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북-북동",
+		"windSpeed": "10~16",
+		"seaHeight": "2~4"
+	},
+	{
+		"location": "서해남부남쪽바깥먼바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "10~16",
+		"seaHeight": "2~4"
+	},
+	{
+		"location": "서해남부남쪽안쪽먼바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "동-남동",
+		"windSpeed": "10~16",
+		"seaHeight": "2~4"
+	},
+	{
+		"location": "서해남부남쪽안쪽먼바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "동-남동",
+		"windSpeed": "10~14",
+		"seaHeight": "2~3"
+	},
+	{
+		"location": "서해남부남쪽안쪽먼바다",
+		"day": "17일(토)",
+		"weather": "구름많음",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "서해남부남쪽안쪽먼바다",
+		"day": "17일(토)",
+		"weather": "흐림",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "서해남부남쪽안쪽먼바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북-북동",
+		"windSpeed": "10~16",
+		"seaHeight": "2~4"
+	},
+	{
+		"location": "서해남부남쪽안쪽먼바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "10~16",
+		"seaHeight": "2~4"
+	},
+	{
+		"location": "전북북부앞바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "동-남동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "전북북부앞바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "동-남동",
+		"windSpeed": "7~11",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "전북북부앞바다",
+		"day": "17일(토)",
+		"weather": "맑음",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "6~9",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "전북북부앞바다",
+		"day": "17일(토)",
+		"weather": "구름많음",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "6~9",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "전북북부앞바다",
+		"day": "18일(일)",
+		"weather": "구름많음",
+		"time": "오전",
+		"windDir": "북-북동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "전북북부앞바다",
+		"day": "18일(일)",
+		"weather": "구름많음",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "전북남부앞바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "동-남동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "전북남부앞바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "동-남동",
+		"windSpeed": "7~11",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "전북남부앞바다",
+		"day": "17일(토)",
+		"weather": "맑음",
+		"time": "오전",
+		"windDir": "동-남동",
+		"windSpeed": "6~9",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "전북남부앞바다",
+		"day": "17일(토)",
+		"weather": "구름많음",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "6~9",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "전북남부앞바다",
+		"day": "18일(일)",
+		"weather": "구름많음",
+		"time": "오전",
+		"windDir": "북-북동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "전북남부앞바다",
+		"day": "18일(일)",
+		"weather": "구름많음",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "전남북부서해앞바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "동-남동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "전남북부서해앞바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "동-남동",
+		"windSpeed": "7~11",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "전남북부서해앞바다",
+		"day": "17일(토)",
+		"weather": "구름많음",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "6~9",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "전남북부서해앞바다",
+		"day": "17일(토)",
+		"weather": "흐림",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "6~9",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "전남북부서해앞바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북-북동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "전남북부서해앞바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "전남중부서해앞바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "동-남동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "전남중부서해앞바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "동-남동",
+		"windSpeed": "7~11",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "전남중부서해앞바다",
+		"day": "17일(토)",
+		"weather": "구름많음",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "6~9",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "전남중부서해앞바다",
+		"day": "17일(토)",
+		"weather": "흐림",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "6~9",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "전남중부서해앞바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북-북동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "전남중부서해앞바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "전남남부서해앞바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "동-남동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "전남남부서해앞바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "동-남동",
+		"windSpeed": "7~11",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "전남남부서해앞바다",
+		"day": "17일(토)",
+		"weather": "구름많음",
+		"time": "오전",
+		"windDir": "동-남동",
+		"windSpeed": "6~9",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "전남남부서해앞바다",
+		"day": "17일(토)",
+		"weather": "흐림",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "6~9",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "전남남부서해앞바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북-북동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "전남남부서해앞바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "남해서부서쪽먼바다",
+		"day": "16일(금)",
+		"weather": "구름많음",
+		"time": "오전",
+		"windDir": "동-남동",
+		"windSpeed": "9~13",
+		"seaHeight": "1.5~2.5"
+	},
+	{
+		"location": "남해서부서쪽먼바다",
+		"day": "16일(금)",
+		"weather": "구름많음",
+		"time": "오후",
+		"windDir": "동-남동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "남해서부서쪽먼바다",
+		"day": "17일(토)",
+		"weather": "맑음",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "남해서부서쪽먼바다",
+		"day": "17일(토)",
+		"weather": "흐림",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "9~14",
+		"seaHeight": "1.5~3"
+	},
+	{
+		"location": "남해서부서쪽먼바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북-북동",
+		"windSpeed": "12~16",
+		"seaHeight": "2~4"
+	},
+	{
+		"location": "남해서부서쪽먼바다",
+		"day": "18일(일)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "14~24",
+		"seaHeight": "3~6"
+	},
+	{
+		"location": "남해서부앞바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "남해서부앞바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "7~11",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "남해서부앞바다",
+		"day": "17일(토)",
+		"weather": "구름많음",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "6~9",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "남해서부앞바다",
+		"day": "17일(토)",
+		"weather": "흐림",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "9~13",
+		"seaHeight": "1.5~2.5"
+	},
+	{
+		"location": "남해서부앞바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "9~13",
+		"seaHeight": "1.5~2.5"
+	},
+	{
+		"location": "남해서부앞바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "9~14",
+		"seaHeight": "1.5~3"
+	},
+	{
+		"location": "남해서부동쪽먼바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "10~14",
+		"seaHeight": "2~3"
+	},
+	{
+		"location": "남해서부동쪽먼바다",
+		"day": "16일(금)",
+		"weather": "구름많음",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "9~13",
+		"seaHeight": "1.5~2.5"
+	},
+	{
+		"location": "남해서부동쪽먼바다",
+		"day": "17일(토)",
+		"weather": "구름많음",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "남해서부동쪽먼바다",
+		"day": "17일(토)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "10~16",
+		"seaHeight": "2~4"
+	},
+	{
+		"location": "남해서부동쪽먼바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "14~20",
+		"seaHeight": "3~5"
+	},
+	{
+		"location": "남해서부동쪽먼바다",
+		"day": "18일(일)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "14~28",
+		"seaHeight": "3~7"
+	},
+	{
+		"location": "전남서부남해앞바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "전남서부남해앞바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "7~11",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "전남서부남해앞바다",
+		"day": "17일(토)",
+		"weather": "구름많음",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "6~9",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "전남서부남해앞바다",
+		"day": "17일(토)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "9~13",
+		"seaHeight": "1.5~2.5"
+	},
+	{
+		"location": "전남서부남해앞바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "9~13",
+		"seaHeight": "1.5~2.5"
+	},
+	{
+		"location": "전남서부남해앞바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "9~14",
+		"seaHeight": "1.5~3"
+	},
+	{
+		"location": "전남동부남해앞바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "전남동부남해앞바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "7~11",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "전남동부남해앞바다",
+		"day": "17일(토)",
+		"weather": "구름많음",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "6~9",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "전남동부남해앞바다",
+		"day": "17일(토)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "9~13",
+		"seaHeight": "1.5~2.5"
+	},
+	{
+		"location": "전남동부남해앞바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "9~13",
+		"seaHeight": "1.5~2.5"
+	},
+	{
+		"location": "전남동부남해앞바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "9~14",
+		"seaHeight": "1.5~3"
+	},
+	{
+		"location": "남해동부앞바다",
+		"day": "16일(금)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "5~12",
+		"seaHeight": "0.5~2.5"
+	},
+	{
+		"location": "남해동부앞바다",
+		"day": "16일(금)",
+		"weather": "맑음",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "5~11",
+		"seaHeight": "0.5~2"
+	},
+	{
+		"location": "남해동부앞바다",
+		"day": "17일(토)",
+		"weather": "구름많음",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "5~10",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "남해동부앞바다",
+		"day": "17일(토)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "6~10",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "남해동부앞바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북-북동",
+		"windSpeed": "7~13",
+		"seaHeight": "0.5~2.5"
+	},
+	{
+		"location": "남해동부앞바다",
+		"day": "18일(일)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "8~16",
+		"seaHeight": "1~3.5"
+	},
+	{
+		"location": "남해동부바깥먼바다",
+		"day": "16일(금)",
+		"weather": "맑음",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "9~13",
+		"seaHeight": "1.5~2.5"
+	},
+	{
+		"location": "남해동부바깥먼바다",
+		"day": "16일(금)",
+		"weather": "맑음",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2.5"
+	},
+	{
+		"location": "남해동부바깥먼바다",
+		"day": "17일(토)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "북-북동",
+		"windSpeed": "9~14",
+		"seaHeight": "1.5~3"
+	},
+	{
+		"location": "남해동부바깥먼바다",
+		"day": "17일(토)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "10~16",
+		"seaHeight": "2~4"
+	},
+	{
+		"location": "남해동부바깥먼바다",
+		"day": "18일(일)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "15~30",
+		"seaHeight": "3~7"
+	},
+	{
+		"location": "남해동부바깥먼바다",
+		"day": "18일(일)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "동-남동",
+		"windSpeed": "20~40",
+		"seaHeight": "3~8"
+	},
+	{
+		"location": "남해동부안쪽먼바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "8~13",
+		"seaHeight": "1~2.5"
+	},
+	{
+		"location": "남해동부안쪽먼바다",
+		"day": "16일(금)",
+		"weather": "맑음",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2.5"
+	},
+	{
+		"location": "남해동부안쪽먼바다",
+		"day": "17일(토)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2.5"
+	},
+	{
+		"location": "남해동부안쪽먼바다",
+		"day": "17일(토)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "9~14",
+		"seaHeight": "1.5~3.5"
+	},
+	{
+		"location": "남해동부안쪽먼바다",
+		"day": "18일(일)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "11~25",
+		"seaHeight": "2~5"
+	},
+	{
+		"location": "남해동부안쪽먼바다",
+		"day": "18일(일)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "12~35",
+		"seaHeight": "2~8"
+	},
+	{
+		"location": "부산앞바다",
+		"day": "16일(금)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "7~12",
+		"seaHeight": "0.5~2.5"
+	},
+	{
+		"location": "부산앞바다",
+		"day": "16일(금)",
+		"weather": "구름많음",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "7~11",
+		"seaHeight": "0.5~2"
+	},
+	{
+		"location": "부산앞바다",
+		"day": "17일(토)",
+		"weather": "구름많음",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "6~10",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "부산앞바다",
+		"day": "17일(토)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "7~10",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "부산앞바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북-북동",
+		"windSpeed": "8~13",
+		"seaHeight": "0.5~2.5"
+	},
+	{
+		"location": "부산앞바다",
+		"day": "18일(일)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "9~16",
+		"seaHeight": "1~3.5"
+	},
+	{
+		"location": "경남중부남해앞바다",
+		"day": "16일(금)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "5~10",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "경남중부남해앞바다",
+		"day": "16일(금)",
+		"weather": "맑음",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "5~9",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "경남중부남해앞바다",
+		"day": "17일(토)",
+		"weather": "구름많음",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "5~9",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "경남중부남해앞바다",
+		"day": "17일(토)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "6~9",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "경남중부남해앞바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북-북동",
+		"windSpeed": "7~11",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "경남중부남해앞바다",
+		"day": "18일(일)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "9~14",
+		"seaHeight": "1~3"
+	},
+	{
+		"location": "경남서부남해앞바다",
+		"day": "16일(금)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "6~11",
+		"seaHeight": "0.5~2"
+	},
+	{
+		"location": "경남서부남해앞바다",
+		"day": "16일(금)",
+		"weather": "맑음",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "6~10",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "경남서부남해앞바다",
+		"day": "17일(토)",
+		"weather": "구름많음",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "5~10",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "경남서부남해앞바다",
+		"day": "17일(토)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "6~10",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "경남서부남해앞바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북-북동",
+		"windSpeed": "7~12",
+		"seaHeight": "0.5~2"
+	},
+	{
+		"location": "경남서부남해앞바다",
+		"day": "18일(일)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "8~14",
+		"seaHeight": "1~3"
+	},
+	{
+		"location": "거제시동부앞바다",
+		"day": "16일(금)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "7~12",
+		"seaHeight": "1~2.5"
+	},
+	{
+		"location": "거제시동부앞바다",
+		"day": "16일(금)",
+		"weather": "맑음",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "7~11",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "거제시동부앞바다",
+		"day": "17일(토)",
+		"weather": "구름많음",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "6~10",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "거제시동부앞바다",
+		"day": "17일(토)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "7~10",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "거제시동부앞바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북-북동",
+		"windSpeed": "8~13",
+		"seaHeight": "1~2.5"
+	},
+	{
+		"location": "거제시동부앞바다",
+		"day": "18일(일)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "9~14",
+		"seaHeight": "1.5~3.5"
+	},
+	{
+		"location": "제주도남쪽바깥먼바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "동-남동",
+		"windSpeed": "10~14",
+		"seaHeight": "2~3"
+	},
+	{
+		"location": "제주도남쪽바깥먼바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "동-남동",
+		"windSpeed": "10~14",
+		"seaHeight": "2~3"
+	},
+	{
+		"location": "제주도남쪽바깥먼바다",
+		"day": "17일(토)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "12~20",
+		"seaHeight": "2~5"
+	},
+	{
+		"location": "제주도남쪽바깥먼바다",
+		"day": "17일(토)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "14~24",
+		"seaHeight": "3~6"
+	},
+	{
+		"location": "제주도남쪽바깥먼바다",
+		"day": "18일(일)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "북-북동",
+		"windSpeed": "16~32",
+		"seaHeight": "4~8"
+	},
+	{
+		"location": "제주도남쪽바깥먼바다",
+		"day": "18일(일)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "20~36",
+		"seaHeight": "5~9"
+	},
+	{
+		"location": "제주도남서쪽안쪽먼바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "동-남동",
+		"windSpeed": "9~13",
+		"seaHeight": "1.5~2.5"
+	},
+	{
+		"location": "제주도남서쪽안쪽먼바다",
+		"day": "16일(금)",
+		"weather": "구름많음",
+		"time": "오후",
+		"windDir": "동-남동",
+		"windSpeed": "9~13",
+		"seaHeight": "1.5~2.5"
+	},
+	{
+		"location": "제주도남서쪽안쪽먼바다",
+		"day": "17일(토)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "10~14",
+		"seaHeight": "2~3"
+	},
+	{
+		"location": "제주도남서쪽안쪽먼바다",
+		"day": "17일(토)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "12~20",
+		"seaHeight": "2~5"
+	},
+	{
+		"location": "제주도남서쪽안쪽먼바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북-북동",
+		"windSpeed": "12~20",
+		"seaHeight": "2~5"
+	},
+	{
+		"location": "제주도남서쪽안쪽먼바다",
+		"day": "18일(일)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "16~32",
+		"seaHeight": "4~8"
+	},
+	{
+		"location": "제주도남동쪽안쪽먼바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "동-남동",
+		"windSpeed": "9~13",
+		"seaHeight": "1.5~2.5"
+	},
+	{
+		"location": "제주도남동쪽안쪽먼바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "동-남동",
+		"windSpeed": "9~13",
+		"seaHeight": "1.5~2.5"
+	},
+	{
+		"location": "제주도남동쪽안쪽먼바다",
+		"day": "17일(토)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "10~14",
+		"seaHeight": "2~3"
+	},
+	{
+		"location": "제주도남동쪽안쪽먼바다",
+		"day": "17일(토)",
+		"weather": "흐림",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "12~20",
+		"seaHeight": "2~5"
+	},
+	{
+		"location": "제주도남동쪽안쪽먼바다",
+		"day": "18일(일)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "북-북동",
+		"windSpeed": "14~24",
+		"seaHeight": "3~6"
+	},
+	{
+		"location": "제주도남동쪽안쪽먼바다",
+		"day": "18일(일)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "16~32",
+		"seaHeight": "4~8"
+	},
+	{
+		"location": "제주도앞바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "동-남동",
+		"windSpeed": "9~13",
+		"seaHeight": "1.5~2.5"
+	},
+	{
+		"location": "제주도앞바다",
+		"day": "16일(금)",
+		"weather": "구름많음",
+		"time": "오후",
+		"windDir": "동-남동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "제주도앞바다",
+		"day": "17일(토)",
+		"weather": "맑음",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "제주도앞바다",
+		"day": "17일(토)",
+		"weather": "흐림",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "9~14",
+		"seaHeight": "1.5~3"
+	},
+	{
+		"location": "제주도앞바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북-북동",
+		"windSpeed": "12~20",
+		"seaHeight": "2~5"
+	},
+	{
+		"location": "제주도앞바다",
+		"day": "18일(일)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "14~24",
+		"seaHeight": "3~6"
+	},
+	{
+		"location": "제주도북부앞바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "동-남동",
+		"windSpeed": "9~13",
+		"seaHeight": "1.5~2.5"
+	},
+	{
+		"location": "제주도북부앞바다",
+		"day": "16일(금)",
+		"weather": "구름많음",
+		"time": "오후",
+		"windDir": "동-남동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "제주도북부앞바다",
+		"day": "17일(토)",
+		"weather": "맑음",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "제주도북부앞바다",
+		"day": "17일(토)",
+		"weather": "흐림",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "9~14",
+		"seaHeight": "1.5~3"
+	},
+	{
+		"location": "제주도북부앞바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북-북동",
+		"windSpeed": "12~20",
+		"seaHeight": "2~5"
+	},
+	{
+		"location": "제주도북부앞바다",
+		"day": "18일(일)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "14~24",
+		"seaHeight": "3~6"
+	},
+	{
+		"location": "제주도서부앞바다",
+		"day": "16일(금)",
+		"weather": "구름많음",
+		"time": "오전",
+		"windDir": "동-남동",
+		"windSpeed": "9~13",
+		"seaHeight": "1.5~2.5"
+	},
+	{
+		"location": "제주도서부앞바다",
+		"day": "16일(금)",
+		"weather": "구름많음",
+		"time": "오후",
+		"windDir": "동-남동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "제주도서부앞바다",
+		"day": "17일(토)",
+		"weather": "맑음",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "제주도서부앞바다",
+		"day": "17일(토)",
+		"weather": "흐림",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "10~14",
+		"seaHeight": "2~3"
+	},
+	{
+		"location": "제주도서부앞바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북-북동",
+		"windSpeed": "12~20",
+		"seaHeight": "2~5"
+	},
+	{
+		"location": "제주도서부앞바다",
+		"day": "18일(일)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "14~24",
+		"seaHeight": "3~6"
+	},
+	{
+		"location": "제주도남부앞바다",
+		"day": "16일(금)",
+		"weather": "구름많음",
+		"time": "오전",
+		"windDir": "동-남동",
+		"windSpeed": "9~13",
+		"seaHeight": "1.5~2.5"
+	},
+	{
+		"location": "제주도남부앞바다",
+		"day": "16일(금)",
+		"weather": "구름많음",
+		"time": "오후",
+		"windDir": "동-남동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "제주도남부앞바다",
+		"day": "17일(토)",
+		"weather": "맑음",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "제주도남부앞바다",
+		"day": "17일(토)",
+		"weather": "흐림",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "10~14",
+		"seaHeight": "2~3"
+	},
+	{
+		"location": "제주도남부앞바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북-북동",
+		"windSpeed": "12~20",
+		"seaHeight": "2~5"
+	},
+	{
+		"location": "제주도남부앞바다",
+		"day": "18일(일)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "14~24",
+		"seaHeight": "3~6"
+	},
+	{
+		"location": "제주도동부앞바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "동-남동",
+		"windSpeed": "9~13",
+		"seaHeight": "1.5~2.5"
+	},
+	{
+		"location": "제주도동부앞바다",
+		"day": "16일(금)",
+		"weather": "맑음",
+		"time": "오후",
+		"windDir": "동-남동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "제주도동부앞바다",
+		"day": "17일(토)",
+		"weather": "구름많음",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "제주도동부앞바다",
+		"day": "17일(토)",
+		"weather": "흐림",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "10~14",
+		"seaHeight": "2~3"
+	},
+	{
+		"location": "제주도동부앞바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북-북동",
+		"windSpeed": "12~20",
+		"seaHeight": "2~5"
+	},
+	{
+		"location": "제주도동부앞바다",
+		"day": "18일(일)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "14~24",
+		"seaHeight": "3~6"
+	},
+	{
+		"location": "동해남부남쪽바깥먼바다",
+		"day": "16일(금)",
+		"weather": "구름많음",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2.5"
+	},
+	{
+		"location": "동해남부남쪽바깥먼바다",
+		"day": "16일(금)",
+		"weather": "맑음",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2.5"
+	},
+	{
+		"location": "동해남부남쪽바깥먼바다",
+		"day": "17일(토)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "7~11",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "동해남부남쪽바깥먼바다",
+		"day": "17일(토)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2.5"
+	},
+	{
+		"location": "동해남부남쪽바깥먼바다",
+		"day": "18일(일)",
+		"weather": "구름많음",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2.5"
+	},
+	{
+		"location": "동해남부남쪽바깥먼바다",
+		"day": "18일(일)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "9~14",
+		"seaHeight": "1.5~3.5"
+	},
+	{
+		"location": "동해남부남쪽안쪽먼바다",
+		"day": "16일(금)",
+		"weather": "구름많음",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2.5"
+	},
+	{
+		"location": "동해남부남쪽안쪽먼바다",
+		"day": "16일(금)",
+		"weather": "맑음",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2.5"
+	},
+	{
+		"location": "동해남부남쪽안쪽먼바다",
+		"day": "17일(토)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "7~11",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "동해남부남쪽안쪽먼바다",
+		"day": "17일(토)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2.5"
+	},
+	{
+		"location": "동해남부남쪽안쪽먼바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2.5"
+	},
+	{
+		"location": "동해남부남쪽안쪽먼바다",
+		"day": "18일(일)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "9~16",
+		"seaHeight": "1.5~3.5"
+	},
+	{
+		"location": "동해남부앞바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "동-남동",
+		"windSpeed": "9~13",
+		"seaHeight": "1.5~2.5"
+	},
+	{
+		"location": "동해남부앞바다",
+		"day": "16일(금)",
+		"weather": "구름많음",
+		"time": "오후",
+		"windDir": "동-남동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "동해남부앞바다",
+		"day": "17일(토)",
+		"weather": "맑음",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "동해남부앞바다",
+		"day": "17일(토)",
+		"weather": "흐림",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "10~14",
+		"seaHeight": "2~3"
+	},
+	{
+		"location": "동해남부앞바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북-북동",
+		"windSpeed": "12~20",
+		"seaHeight": "2~5"
+	},
+	{
+		"location": "동해남부앞바다",
+		"day": "18일(일)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "14~24",
+		"seaHeight": "3~6"
+	},
+	{
+		"location": "동해남부북쪽바깥먼바다",
+		"day": "16일(금)",
+		"weather": "구름많음",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "동해남부북쪽바깥먼바다",
+		"day": "16일(금)",
+		"weather": "구름많음",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "7~11",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "동해남부북쪽바깥먼바다",
+		"day": "17일(토)",
+		"weather": "구름많음",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "7~11",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "동해남부북쪽바깥먼바다",
+		"day": "17일(토)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "동해남부북쪽바깥먼바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "동-남동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2.5"
+	},
+	{
+		"location": "동해남부북쪽바깥먼바다",
+		"day": "18일(일)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "8~16",
+		"seaHeight": "1~3.5"
+	},
+	{
+		"location": "동해남부북쪽안쪽먼바다",
+		"day": "16일(금)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "동해남부북쪽안쪽먼바다",
+		"day": "16일(금)",
+		"weather": "구름많음",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "7~11",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "동해남부북쪽안쪽먼바다",
+		"day": "17일(토)",
+		"weather": "구름많음",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "7~11",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "동해남부북쪽안쪽먼바다",
+		"day": "17일(토)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "동해남부북쪽안쪽먼바다",
+		"day": "18일(일)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2.5"
+	},
+	{
+		"location": "동해남부북쪽안쪽먼바다",
+		"day": "18일(일)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "9~16",
+		"seaHeight": "1.5~3.5"
+	},
+	{
+		"location": "경북북부앞바다",
+		"day": "16일(금)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북-북동",
+		"windSpeed": "7~11",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "경북북부앞바다",
+		"day": "16일(금)",
+		"weather": "흐림",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "6~10",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "경북북부앞바다",
+		"day": "17일(토)",
+		"weather": "구름많음",
+		"time": "오전",
+		"windDir": "북-북동",
+		"windSpeed": "6~10",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "경북북부앞바다",
+		"day": "17일(토)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "6~10",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "경북북부앞바다",
+		"day": "18일(일)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "북-북동",
+		"windSpeed": "7~11",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "경북북부앞바다",
+		"day": "18일(일)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2.5"
+	},
+	{
+		"location": "경북남부앞바다",
+		"day": "16일(금)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북-북동",
+		"windSpeed": "7~11",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "경북남부앞바다",
+		"day": "16일(금)",
+		"weather": "흐림",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "6~10",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "경북남부앞바다",
+		"day": "17일(토)",
+		"weather": "구름많음",
+		"time": "오전",
+		"windDir": "북-북동",
+		"windSpeed": "6~10",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "경북남부앞바다",
+		"day": "17일(토)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "6~10",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "경북남부앞바다",
+		"day": "18일(일)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "북-북동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "경북남부앞바다",
+		"day": "18일(일)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "9~14",
+		"seaHeight": "1~3"
+	},
+	{
+		"location": "울산앞바다",
+		"day": "16일(금)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "7~12",
+		"seaHeight": "1~2.5"
+	},
+	{
+		"location": "울산앞바다",
+		"day": "16일(금)",
+		"weather": "구름많음",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "7~11",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "울산앞바다",
+		"day": "17일(토)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "6~10",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "울산앞바다",
+		"day": "17일(토)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "7~10",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "울산앞바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북-북동",
+		"windSpeed": "8~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "울산앞바다",
+		"day": "18일(일)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "9~16",
+		"seaHeight": "1~3.5"
+	},
+	{
+		"location": "동해중부바깥먼바다",
+		"day": "16일(금)",
+		"weather": "맑음",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "7~10",
+		"seaHeight": "1~1.5"
+	},
+	{
+		"location": "동해중부바깥먼바다",
+		"day": "16일(금)",
+		"weather": "맑음",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "6~10",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "동해중부바깥먼바다",
+		"day": "17일(토)",
+		"weather": "맑음",
+		"time": "오전",
+		"windDir": "동-남동",
+		"windSpeed": "5~9",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "동해중부바깥먼바다",
+		"day": "17일(토)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "동-남동",
+		"windSpeed": "6~10",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "동해중부바깥먼바다",
+		"day": "18일(일)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "동-남동",
+		"windSpeed": "6~10",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "동해중부바깥먼바다",
+		"day": "18일(일)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "8~13",
+		"seaHeight": "1~2.5"
+	},
+	{
+		"location": "동해중부안쪽먼바다",
+		"day": "16일(금)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "6~9",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "동해중부안쪽먼바다",
+		"day": "16일(금)",
+		"weather": "흐림",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "6~9",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "동해중부안쪽먼바다",
+		"day": "17일(토)",
+		"weather": "구름많음",
+		"time": "오전",
+		"windDir": "동-남동",
+		"windSpeed": "5~9",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "동해중부안쪽먼바다",
+		"day": "17일(토)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "남동-남",
+		"windSpeed": "5~9",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "동해중부안쪽먼바다",
+		"day": "18일(일)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "5~9",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "동해중부안쪽먼바다",
+		"day": "18일(일)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북서-북",
+		"windSpeed": "8~13",
+		"seaHeight": "1~2.5"
+	},
+	{
+		"location": "동해중부앞바다",
+		"day": "16일(금)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "6~9",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "동해중부앞바다",
+		"day": "16일(금)",
+		"weather": "흐림",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "6~9",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "동해중부앞바다",
+		"day": "17일(토)",
+		"weather": "구름많음",
+		"time": "오전",
+		"windDir": "동-남동",
+		"windSpeed": "5~9",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "동해중부앞바다",
+		"day": "17일(토)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "남동-남",
+		"windSpeed": "5~9",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "동해중부앞바다",
+		"day": "18일(일)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "5~9",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "동해중부앞바다",
+		"day": "18일(일)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북서-북",
+		"windSpeed": "8~13",
+		"seaHeight": "1~2.5"
+	},
+	{
+		"location": "강원북부앞바다",
+		"day": "16일(금)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "동-남동",
+		"windSpeed": "5~9",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "강원북부앞바다",
+		"day": "16일(금)",
+		"weather": "흐림",
+		"time": "오후",
+		"windDir": "동-남동",
+		"windSpeed": "4~8",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "강원북부앞바다",
+		"day": "17일(토)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "동-남동",
+		"windSpeed": "4~7",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "강원북부앞바다",
+		"day": "17일(토)",
+		"weather": "구름많음",
+		"time": "오후",
+		"windDir": "남동-남",
+		"windSpeed": "4~7",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "강원북부앞바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "4~7",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "강원북부앞바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오후",
+		"windDir": "북서-북",
+		"windSpeed": "6~10",
+		"seaHeight": "1~1.5"
+	},
+	{
+		"location": "강원중부앞바다",
+		"day": "16일(금)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "동-남동",
+		"windSpeed": "5~9",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "강원중부앞바다",
+		"day": "16일(금)",
+		"weather": "흐림",
+		"time": "오후",
+		"windDir": "동-남동",
+		"windSpeed": "4~8",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "강원중부앞바다",
+		"day": "17일(토)",
+		"weather": "구름많음",
+		"time": "오전",
+		"windDir": "동-남동",
+		"windSpeed": "4~7",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "강원중부앞바다",
+		"day": "17일(토)",
+		"weather": "구름많음",
+		"time": "오후",
+		"windDir": "남동-남",
+		"windSpeed": "4~7",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "강원중부앞바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "4~7",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "강원중부앞바다",
+		"day": "18일(일)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북서-북",
+		"windSpeed": "7~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "강원남부앞바다",
+		"day": "16일(금)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "동-남동",
+		"windSpeed": "5~9",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "강원남부앞바다",
+		"day": "16일(금)",
+		"weather": "흐림",
+		"time": "오후",
+		"windDir": "동-남동",
+		"windSpeed": "4~8",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "강원남부앞바다",
+		"day": "17일(토)",
+		"weather": "구름많음",
+		"time": "오전",
+		"windDir": "동-남동",
+		"windSpeed": "4~7",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "강원남부앞바다",
+		"day": "17일(토)",
+		"weather": "구름많음",
+		"time": "오후",
+		"windDir": "남동-남",
+		"windSpeed": "4~7",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "강원남부앞바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "4~7",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "강원남부앞바다",
+		"day": "18일(일)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북서-북",
+		"windSpeed": "7~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "동해북부먼바다",
+		"day": "16일(금)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "동-남동",
+		"windSpeed": "5~9",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "동해북부먼바다",
+		"day": "16일(금)",
+		"weather": "흐림",
+		"time": "오후",
+		"windDir": "동-남동",
+		"windSpeed": "4~8",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "동해북부먼바다",
+		"day": "17일(토)",
+		"weather": "구름많음",
+		"time": "오전",
+		"windDir": "동-남동",
+		"windSpeed": "4~7",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "동해북부먼바다",
+		"day": "17일(토)",
+		"weather": "구름많음",
+		"time": "오후",
+		"windDir": "남동-남",
+		"windSpeed": "4~7",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "동해북부먼바다",
+		"day": "18일(일)",
+		"weather": "흐림",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "4~7",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "동해북부먼바다",
+		"day": "18일(일)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북서-북",
+		"windSpeed": "6~12",
+		"seaHeight": "1~2"
+	},
+	{
+		"location": "동해북부앞바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "5~9",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "동해북부앞바다",
+		"day": "16일(금)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북동-동",
+		"windSpeed": "5~9",
+		"seaHeight": "0.5~1.5"
+	},
+	{
+		"location": "동해북부앞바다",
+		"day": "17일(토)",
+		"weather": "비",
+		"time": "오전",
+		"windDir": "북동-동",
+		"windSpeed": "4~8",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "동해북부앞바다",
+		"day": "17일(토)",
+		"weather": "맑음",
+		"time": "오후",
+		"windDir": "남-남서",
+		"windSpeed": "4~8",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "동해북부앞바다",
+		"day": "18일(일)",
+		"weather": "구름많음",
+		"time": "오전",
+		"windDir": "남-남서",
+		"windSpeed": "4~8",
+		"seaHeight": "0.5~1"
+	},
+	{
+		"location": "동해북부앞바다",
+		"day": "18일(일)",
+		"weather": "비",
+		"time": "오후",
+		"windDir": "북-북동",
+		"windSpeed": "4~8",
+		"seaHeight": "0.5~1"
+	}
+]
