@@ -1,9 +1,9 @@
 CREATE TABLE `users` (
-  `id` varchar(100) NOT NULL,
-  `email` varchar(20),
-  `nickname` varchar(200) DEFAULT NULL,
+  `id` varchar(50) NOT NULL,
+  `email` varchar(40),
+  `nickname` varchar(50) DEFAULT NULL,
   `thumbnail` varchar(200),
-  `provider` varchar(20),
+  `provider` varchar(10),
   PRIMARY KEY (`id`)
 );
 
